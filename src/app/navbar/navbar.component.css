@@ -1,0 +1,12 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .navbar h1 {
+    font-family: "Josefin Slab";
+    margin: 0px 0px; 
+    color: black;
+    font-size: 60px; 
+  }

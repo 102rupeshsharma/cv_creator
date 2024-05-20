@@ -1,0 +1,658 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+.container{
+    justify-content: center;
+    height: auto;
+}
+.heading {
+    font-family: "Roboto Slab", serif;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+    margin-top: 10px;
+    height: auto;
+    width: auto;
+}
+
+
+small{
+   color: red;
+   padding-left: 15px;
+   position: relative;
+   top: -15px;
+   font-weight: bold;
+}
+.sub_container{
+    display: grid;
+    grid-template-columns: 300px 300px;
+    grid-column-gap: 80px;
+    width: 750px;
+    height: auto;
+    margin: 20px auto;
+}
+
+input{
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    height: 50px;
+    width: 350px;
+    padding-left: 12px;
+    margin: 17px 12px;
+    align-items: center;
+}
+
+.btn_container{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+.p-button-lg{
+    width: 160px;
+    height: 60px;
+    font-size: 100px;
+    border-radius: 30px;
+    border: none;
+    font-size: 20px;
+    background-color: rgb(42, 39, 39);
+    box-shadow: 0 0 10px 0 #373838 inset, 0 0 20px 2px #535555;
+}
+#addSkill{
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+#calendar{
+    margin-left: 12px;
+    padding-right: 20px;
+    height: 50px;
+    font-size: 15px;
+}
+.addbtn{
+    margin: 25px 0px;
+    position: relative;
+    left: -18px;
+    top: -8px;
+    height: 50px;
+    width: 90px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: rgb(90, 88, 88);
+}
+
+span{
+    position: relative;
+    left: 14px;
+    top: 5px;
+    /* border: 2px solid red; */
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+input.ng-invalid.ng-touched{
+    border: 2px solid red;
+}
+textarea.ng-invalid.ng-touched{
+    border: 2px solid red;
+}
+
+@media screen and (max-width:770px) {
+    
+    .container{ 
+        justify-content: center;
+        height: auto;
+    }
+    .heading {
+        font-family: "Roboto Slab", serif;
+        display: flex;
+        justify-content: center;
+        font-size: 45px;
+        margin-top: 10px; 
+        height: auto;
+        width: auto;
+    }
+    
+    
+    small{
+       color: red;
+       padding-left: 15px;
+       position: relative;
+       top: -15px;
+       font-weight: bold;
+    }
+    .sub_container{
+        display: grid;
+        grid-template-columns: 300px 300px;
+        grid-column-gap: 15px;
+        width: 620px;
+        height: auto; 
+        margin:20px auto;
+    }
+    
+    input{
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        height: 47px;
+        width: 276px;
+        padding-left: 12px;
+        margin: 17px 14px;
+        align-items: center;
+    }
+
+    #calendar{
+        margin-left: 14px;
+        padding-right: 20px;
+        height: 50px;
+        font-size: 15px;
+    }
+    
+    .btn_container{
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-evenly;
+    }
+    .p-button-lg{
+        width: 160px;
+        height: 60px;
+        font-size: 100px;
+        border-radius: 30px;
+        border: none;
+        font-size: 20px;
+        background-color: rgb(42, 39, 39);
+        box-shadow: 0 0 10px 0 #373838 inset, 0 0 20px 2px #535555;
+    }
+    #addSkill{
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    
+    .addbtn{
+        margin: 25px 0px;
+        position: relative;
+        left: -18px;
+        top: -8px;
+        height: 50px;
+        width: 90px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color: rgb(90, 88, 88);
+    }
+    
+    span{
+        position: relative;
+        left: 14px;
+        top: 5px;
+        /* border: 2px solid red; */
+        color: red;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    
+    input.ng-invalid.ng-touched{
+        border: 2px solid red;
+    }
+    textarea.ng-invalid.ng-touched{
+        border: 2px solid red;
+    }
+}
+
+
+@media screen and (max-width:630px) {
+    
+    .container{ 
+        justify-content: center;
+        height: auto;
+    }
+    .heading {
+        font-family: "Roboto Slab", serif;
+        display: flex;
+        justify-content: center;
+        font-size: 34px;
+        margin-top: 10px;
+        height: auto;
+        width: auto;
+    }
+    
+    
+    small{
+       color: red;
+       padding-left: 15px;
+       position: relative;
+       top: -15px;
+       font-weight: bold;
+    }
+    .sub_container{
+        display: grid;
+        grid-template-columns: 260px 260px;
+        grid-column-gap: 15px;
+        width: 540px;
+        height: auto;
+        margin:20px auto;
+    }
+    
+    input{
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        height: 47px;
+        width: 250px;
+        padding-left: 12px;
+        margin: 17px 14px;
+        align-items: center;
+    }
+
+    #calendar{
+        margin-left: 14px;
+        padding-right: 20px;
+        height: 50px;
+        font-size: 15px;
+    }
+    
+    .btn_container{
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-evenly;
+    }
+    .p-button-lg{
+        width: 160px;
+        height: 60px;
+        font-size: 100px;
+        border-radius: 30px;
+        border: none;
+        font-size: 20px;
+        background-color: rgb(42, 39, 39);
+        box-shadow: 0 0 10px 0 #373838 inset, 0 0 20px 2px #535555;
+    }
+    #addSkill{
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    
+    .addbtn{
+        margin: 25px 0px;
+        position: relative;
+        left: -18px;
+        top: -8px;
+        height: 50px;
+        width: 90px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color: rgb(90, 88, 88);
+    }
+    
+    span{
+        position: relative;
+        left: 14px;
+        top: 5px;
+        /* border: 2px solid red; */
+        color: red;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    
+    input.ng-invalid.ng-touched{
+        border: 2px solid red;
+    }
+    textarea.ng-invalid.ng-touched{
+        border: 2px solid red;
+    }
+}
+
+
+@media screen and (max-width:565px) {
+    
+    .container{
+        justify-content: center;
+        height: auto;
+    }
+    .heading {
+        font-family: "Roboto Slab", serif;
+        display: flex;
+        justify-content: center;
+        font-size: 34px;
+        margin-top: 10px;
+        height: auto;
+        width: auto;
+    }
+    
+    
+    small{
+       color: red;
+       padding-left: 15px;
+       position: relative;
+       top: -15px;
+       font-weight: bold;
+    }
+    .sub_container{
+        display: grid;
+        grid-template-columns: 225px 225px;
+        grid-column-gap: 15px;
+        width: 495px;
+        height: auto;
+        margin:20px auto;
+    }
+    
+    input{
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        height: 47px;
+        width: 221px;
+        padding-left: 12px;
+        margin: 17px 14px;
+        align-items: center;
+    }
+
+    #calendar{
+        margin-left: 14px;
+        padding-right: 20px;
+        height: 50px;
+        font-size: 15px;
+    }
+    
+    .btn_container{
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-evenly;
+    }
+    .p-button-lg{
+        width: 160px;
+        height: 60px;
+        font-size: 100px;
+        border-radius: 30px;
+        border: none;
+        font-size: 20px;
+        background-color: rgb(42, 39, 39);
+        box-shadow: 0 0 10px 0 #373838 inset, 0 0 20px 2px #535555;
+    }
+    #addSkill{
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    
+    .addbtn{
+        margin: 25px 0px;
+        position: relative;
+        left: -18px;
+        top: -8px;
+        height: 50px;
+        width: 90px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        background-color: rgb(90, 88, 88);
+    }
+    
+    span{
+        position: relative;
+        left: 14px;
+        top: 5px;
+        /* border: 2px solid red; */
+        color: red;
+        font-size: 14px;
+        font-weight: bold;
+    }
+    
+    input.ng-invalid.ng-touched{
+        border: 2px solid red;
+    }
+    textarea.ng-invalid.ng-touched{
+        border: 2px solid red;
+    }
+}
+
+
+
+@media screen and (max-width:520px) {
+    
+    .container{
+        justify-content: center;
+        height: auto;
+        margin: auto;
+    }
+    .heading {
+        font-family: "Roboto Slab", serif;
+        display: flex;
+        justify-content: center;
+        font-size: 34px;
+        margin-top: 10px;
+        height: auto;
+        width: auto;
+    }
+    
+    
+    small{
+       color: red;
+       padding-left: 15px;
+       position: relative;
+       top: -15px;
+       font-weight: bold;
+    }
+    .sub_container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 395px;
+        height: auto;
+        margin:20px auto;
+    }
+    
+    input{
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        height: 47px;
+        width: 336px;
+        padding-left: 12px;
+        margin: 17px 25px;
+        align-items: center;
+    }
+
+    #calendar{
+        margin-left: 25px;
+        padding-right: 20px;
+        height: 50px;
+        font-size: 15px;
+    }
+    
+    .btn_container{
+        display: flex;
+        margin-top: 20px;
+        justify-content: space-evenly;
+    }
+    .p-button-lg{
+        width: 153px;
+        height: 49px;
+        font-size: 100px;
+        border-radius: 30px;
+        border: none;
+        font-size: 20px;
+        background-color: rgb(42, 39, 39);
+        box-shadow: 0 0 10px 0 #373838 inset, 0 0 20px 2px #535555;
+    }
+    
+    input.ng-invalid.ng-touched{
+        border: 2px solid red;
+    }
+    textarea.ng-invalid.ng-touched{
+        border: 2px solid red;
+    }
+}
+
+
+
+@media screen and (min-width:309px) and (max-width:412px) {
+    
+    .container{
+        justify-content: center;
+        height: auto;
+    }
+    .heading {
+        font-family: "Roboto Slab", serif;
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        margin-top: 10px;
+        height: auto;
+        width: auto;
+    }
+    
+    
+    small{
+       color: red;
+       padding-left: 15px;
+       position: relative;
+       top: -15px;
+       font-weight: bold;
+    }
+    .sub_container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 309px;
+        height: auto;
+        margin:10px auto;
+    }
+    
+    input{
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        height: 32px;
+        width: 273px;
+        padding-left: 12px;
+        margin: 17px 14px;
+        align-items: center;
+    }
+
+    #calendar{
+        margin-left: 14px;
+        padding-right: 20px;
+        height: 50px;
+        font-size: 15px;
+    }
+    
+    .btn_container{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+        justify-content: space-evenly;
+    }
+    .p-button-lg{
+        width: 114px;
+        margin: 0px 0px 15px 0px;
+        height: 40px;
+        font-size: 50px;
+        border-radius: 30px;
+        border: none;
+        font-size: 20px;
+        background-color: rgb(42, 39, 39);
+        box-shadow: 0 0 10px 0 #373838 inset, 0 0 20px 2px #535555;
+    }
+    
+    input.ng-invalid.ng-touched{
+        border: 2px solid red;
+    }
+    textarea.ng-invalid.ng-touched{
+        border: 2px solid red;
+    }
+}
+
+
+
+
+
+
+@media screen and (max-width:308px) {
+    
+    .container{
+        justify-content: center;
+        height: auto;
+    }
+    .heading {
+        font-family: "Roboto Slab", serif;
+        display: flex;
+        justify-content: center;
+        font-size: 20px;
+        margin-top: 10px;
+        height: auto;
+        width: auto;
+    }
+    
+    
+    small{
+       color: red;
+       padding-left: 15px;
+       position: relative;
+       top: -15px;
+       font-weight: bold;
+    }
+    .sub_container{
+        display: flex;
+        flex-wrap: wrap;
+        width: 234px;
+        height: auto;
+        margin:20px auto;
+    }
+    
+    input{
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        height: 32px;
+        width: 200px;
+        padding-left: 12px;
+        margin: 17px 14px;
+        align-items: center;
+    }
+
+    #calendar{
+        margin-left: 14px;
+        padding-right: 20px;
+        height: 50px;
+        font-size: 15px;
+    }
+    
+    .btn_container{
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+        justify-content: space-evenly;
+    }
+    .p-button-lg{
+        width: 142px;
+        margin: 0px 0px 15px 0px;
+        height: 40px;
+        font-size: 100px;
+        border-radius: 30px;
+        border: none;
+        font-size: 20px;
+        background-color: rgb(42, 39, 39);
+        box-shadow: 0 0 10px 0 #373838 inset, 0 0 20px 2px #535555;
+    }
+    
+    input.ng-invalid.ng-touched{
+        border: 2px solid red;
+    }
+    textarea.ng-invalid.ng-touched{
+        border: 2px solid red;
+    }
+}
+

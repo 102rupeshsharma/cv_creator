@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: gold;
+    width:100%;
+}
+ .buttons{
+    position: absolute;
+    left: 1248px;
+    top: 12px;
+    height: 60px;
+
+}
+.buttons button{
+    color: white;
+    width: 98px;
+    height: 48px;
+    border-radius: 13px;
+    font-size: 19px;
+    background-color: rgb(69 63 63);
+    border: none;
+    margin:5px 5px 0px 5px;
+    cursor: pointer;
+    /* box-shadow: 0 0 10px 0 #373838 inset, 0 0 20px 2px #535555; */
+    transition: 0.1s all ease-in-out;
+}
+.buttons button:hover {
+    transform: scale(1.1);
+    background-color: rgb(28, 27, 27);
+
+}
+
+.intro_heading {
+    /* background-color: orange; */
+    display: flex;
+    justify-content: center;
+    font-family: "Merriweather", serif;
+    font-size: 50px;
+    font-weight: 300;
+    font-style: normal;
+    margin-top: 50px;
+}
+
+.card {
+    width: 100vw;
+    height: 466px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+}
+
+.p-button-lg {
+    width: 252px;
+    height: 70px;
+    border-radius: 30px;
+    border: none;
+    position: relative;
+    font-size: 25px;
+    background-color: rgb(42, 39, 39);
+    box-shadow: 0 0 10px 0 #373838 inset, 0 0 20px 2px #535555;
+    transition: 0.1s all ease-in-out;
+}
+
+.p-button-lg:hover {
+    transform: scale(1.1);
+    background-color: rgb(28, 27, 27);
+
+}
+
+@media screen and (max-width: 439px) {
+
+    .intro_heading {
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        font-family: "Merriweather", serif;
+        font-size: 40px;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .btn {
+        width: 220px;
+        height: 61px;
+        border-radius: 30px;
+        border: none;
+        position: relative;
+        font-size: 21px;
+        background-color: rgb(42, 39, 39);
+        box-shadow: 0 0 10px 0 #373838 inset, 0 0 20px 2px #535555;
+        transition: 0.1s all ease-in-out;
+    }
+
+    .btn:hover {
+        transform: scale(1);
+        background-color: rgb(28, 27, 27);
+    }
+
+
+}
+
+@media screen and (min-width: 281px) and (max-width: 324px) {
+    .intro_heading p {
+        font-size: 30px;
+        font-weight: 400;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+
+@media screen and (min-width:324px) and (max-width: 352px) {
+    .intro_heading p {
+        font-size: 35px;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "Merriweather", serif;
+        font-weight: 400;
+        font-style: normal;
+
+    }
+}
+
+@media screen and (min-width:200px) and (max-width: 280px) {
+    .intro_heading p {
+        font-size: 29px;
+        font-family: "Merriweather", serif;
+        font-weight: 300;
+        font-style: normal;
+        width: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+}

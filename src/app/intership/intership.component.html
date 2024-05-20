@@ -1,0 +1,55 @@
+<app-navbar></app-navbar>
+
+<div class="heading">
+    Enter Your Internship Details
+</div>
+
+<div class="container">
+    <form [formGroup]="signupForm" (ngSubmit)="storeData()">
+        <ng-container *ngFor="let detail of internshipDetails; let i = index">
+            <div class="sub_container">
+                <div>
+                    <input type="text" formControlName="companyName{{i}}" class="p-inputtext-lg" placeholder="Compnay Name"
+                        [(ngModel)]="detail.companyName" />
+                    <small *ngIf="signupForm.get('companyName' + i)?.invalid && signupForm.get('companyName' + i)?.touched">
+                        *Enter company name</small>
+                </div>
+
+                <div>
+                    <input type="text" formControlName="position{{i}}" class="p-inputtext-lg" placeholder="Position"
+                        [(ngModel)]="detail.position" />
+                    <small *ngIf="signupForm.get('position' + i)?.invalid && signupForm.get('position' + i)?.touched">
+                        *Enter your company position</small>
+                </div>
+
+                <div class="certificate">
+                    <input type="text" id="certificate" formControlName="certificate{{i}}" class="p-inputtext-lg" placeholder="Certificates"
+                        [(ngModel)]="detail.certificate">
+                    <small *ngIf="signupForm.get('certificate' + i)?.invalid && signupForm.get('certificate' + i)?.touched">
+                        *Enter your certificate</small>
+                </div>
+
+                <div class="textarea">
+                    <textarea name="textarea{{i}}" formControlName="projectInfo{{i}}" cols="95" rows="5" id="textarea"
+                        placeholder="Enter the projects Description" [(ngModel)]="detail.projectInfo"></textarea>
+                    <small *ngIf="signupForm.get('projectInfo' + i)?.invalid && signupForm.get('projectInfo' + i)?.touched">
+                        *Describe your worked projects</small>
+                </div>
+            </div>
+
+            <button type="button" (click)="remove(i)" [disabled]="i === 0">Remove</button>
+        </ng-container>
+
+        <button id="addMore" type="button" placeholder="add more" (click)="addMore()">Add More</button>
+
+        <div class="btn_container">
+            <button type="button" [routerLink]="['/internshipOption']" pButton value="go back" label="Back" class="p-button-lg">
+            </button>
+            <button type="submit" [disabled]="signupForm.invalid" pButton value="store Data" class="p-button-lg">
+                Next
+            </button>
+
+        </div>
+    </form>
+</div>
+

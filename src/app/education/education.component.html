@@ -1,0 +1,39 @@
+<app-navbar id="nav"></app-navbar>
+
+<div class="heading">
+    Education Details
+</div>
+
+<div class="container">
+    <form [formGroup]="signupForm" (ngSubmit)="storeData(signupForm)">
+        <div class="sub_container">
+            <div>
+                <input pInputText type="text" formControlName="college" class="p-inputtext-lg"
+                    placeholder="College Name" [(ngModel)]="nameValue" (input)="onNameChange()" />
+                <span *ngIf="signupForm.get('college')?.invalid && signupForm.get('college')?.touched">*Enter your
+                    college name</span>
+            </div>
+
+            <div>
+                <input pInputText type="text" formControlName="branch" class="p-inputtext-lg" placeholder="Branch"
+                    [(ngModel)]="branchValue" (input)="onInputChange()" />
+                <span *ngIf="signupForm.get('branch')?.invalid && signupForm.get('branch')?.touched">*Enter your
+                    Branch</span>
+            </div>
+
+            <div>
+                <input type="text" id="calendar" formControlName="graduationYear" placeholder="Graduation Date"
+                    onfocus="(this.type = 'date') ">
+                <span
+                    *ngIf="signupForm.get('graduationYear')?.invalid && signupForm.get('graduationYear')?.touched">*Enter
+                    your passout date</span>
+            </div>
+        </div>
+        <div class="btn_container">
+            <button type="button" [routerLink]="['/workexperience']" pButton value="go back" label="Back"
+                class="p-button-lg"> </button>
+            <button type="submit" [disabled]="signupForm.invalid" pButton value="store Data" label="Next"
+                class="p-button-lg"> </button>
+        </div>
+    </form>
+</div>

@@ -1,0 +1,49 @@
+<div class="container">
+
+        <div class="signupForm">
+          <div class="form">
+            <div class="heading">
+              Login
+            </div>
+            <form (ngSubmit)="onLogin()">
+              <div>
+                <input type="email" id="email" name="email" [(ngModel)]="email" placeholder="email" required>
+              </div>
+              <div>
+                <input type="password" id="password" name="password" placeholder="password" [(ngModel)]="password" required>
+              </div>
+              <div class="btn">
+                <button class="submit" type="submit">Login</button>
+              </div>
+            </form>
+      
+            <span class="forgotPassword"> <a href="/forgotPassword">Forgot Password</a> </span>
+            <div class="signinText"> 
+              <span style="color: black;">Don't have an account?</span> 
+              <span style="margin: 4px;"> <a routerLink="/signup">Sign Up</a></span> 
+            </div>
+            
+            
+            
+          </div>
+      
+          <div class="InfoContainer">
+            <div class="header">
+              <img src="../../assets/resume.png" alt=""> 
+              <span>Your CV</span>
+            </div>
+            <div class="info">
+              <span>Make a CV to define yourself The right way. Meet </span>
+              <span>thousands of job announcements and employers</span>
+              <span> by the help of your profile with a private extension, </span>
+              <span> which you can share at all social</span> 
+              <span>media environments.</span>
+            </div>
+            <footer class="footer">
+              <button class="signup"  routerLink="/signup">Register</button>
+            </footer>
+          </div>
+        </div>
+      
+      </div>
+      

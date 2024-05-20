@@ -1,0 +1,174 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+#container {
+  margin: auto;
+  height: auto;
+  width: 840px; 
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  font-size: 29px;
+  padding-top: 51px;
+  font-weight: 600;
+}
+
+.basicInfo {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 60px;
+  margin-top: 20px;
+}
+a,
+.gmail {
+  font-size: 15px;
+}
+
+
+#phone,
+#city,
+#state {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+}
+
+.summary {
+  margin: 26px 54px 0px 60px;
+  font-size: 16px;
+}
+
+hr {
+  width: 757px;
+  height: 3px;
+  margin: 9px 48px;
+  background-color: black;
+}
+
+.skillheader {
+  height: 30px;
+  margin: 0px 25px;
+  padding: 22px 0px;
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.skills {
+  margin-top: 10px;
+  margin: 0px 35px;
+  padding: 0px 40px;
+  font-size: 30px;
+}
+li{
+  font-size: 17px;
+}
+
+.internshipInfo,.projectInfo{
+  margin: 1px 44px 0px 53px;
+  word-wrap: break-word;
+}
+.details{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.comapanyNameHeader {
+  margin: 0px 25px;
+  padding: 22px 0px;
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+
+}
+
+.comapanyName {
+  margin: 5px 15px;
+  font-size: 20px;
+  margin: 20px 35px 0px 60px;
+  font-weight: 600;
+}
+
+.role {
+  margin: 5px 15px;
+  font-size: 20px;
+  margin: 20px 35px 0px 60px;
+}
+
+.compnay_details {
+  font-size: 16px;
+  margin: 20px 35px 0px 60px;
+}
+
+.projectNameHeader {
+  margin: 0px 25px;
+  padding: 22px 0px;
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.educationHeader {
+  margin: 0px 25px;
+  padding: 22px 0px;
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.collegeInfo {
+  display: flex;
+  width: 700px;
+  margin: auto;
+  justify-content: space-between;
+}
+
+.personalInfoHeader {
+  margin: 0px 25px;
+  padding: 22px 0px;
+  font-size: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.dob,
+.language {
+  display: flex;
+}
+
+.downlordbtn {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  height: auto;
+  background-color: transparent;
+}
+
+.download {
+  width: 147px;
+  height: 40px;
+  background-color: rgb(28, 200, 200);
+  cursor: pointer;
+  border-radius: 5px;
+}

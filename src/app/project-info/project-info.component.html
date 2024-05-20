@@ -1,0 +1,47 @@
+<app-navbar></app-navbar>
+
+<div class="heading">
+    Enter Your Project Details
+</div>
+
+<div class="container">
+    <form [formGroup]="signupForm" (ngSubmit)="storeData()">
+        <ng-container *ngFor="let detail of projectDetails; let i = index">
+            <div class="sub_container">
+                <div>
+                    <input type="text" formControlName="ProjectTitle{{i}}" class="p-inputtext-lg" placeholder="Project Title"
+                        [(ngModel)]="detail.ProjectTitle" />
+                    <small *ngIf="signupForm.get('ProjectTitle' + i)?.invalid && signupForm.get('ProjectTitle' + i)?.touched">
+                        *Enter Project Title</small>
+                </div>
+
+                <div class="projectUrl">
+                    <input type="text" id="projectUrl" formControlName="projectUrl{{i}}" class="p-inputtext-lg" placeholder="projectUrl"
+                        [(ngModel)]="detail.projectUrl">
+                    <small *ngIf="signupForm.get('projectUrl' + i)?.invalid && signupForm.get('projectUrl' + i)?.touched">
+                        *Enter your project url</small>
+                </div>
+
+                <div class="textarea">
+                    <textarea name="textarea{{i}}" formControlName="projectDescription{{i}}" cols="95" rows="5" id="textarea"
+                        placeholder="Enter the projects Description" [(ngModel)]="detail.projectDescription"></textarea>
+                    <small *ngIf="signupForm.get('projectDescription' + i)?.invalid && signupForm.get('projectDescription' + i)?.touched">
+                        *Describe your worked projects</small>
+                </div>
+            </div>
+
+            <button type="button" (click)="remove(i)" [disabled]="i === 0">Remove</button>
+        </ng-container>
+
+        <button id="addMore" type="button" placeholder="add more" (click)="addMore()">Add More</button>
+
+        <div class="btn_container">
+            <button type="button" [routerLink]="['/internshipOption']" pButton value="go back" label="Back" class="p-button-lg">
+            </button>
+            <button type="submit" [disabled]="signupForm.invalid" pButton value="store Data" class="p-button-lg">
+                Next
+            </button>
+
+        </div>
+    </form>
+</div>
