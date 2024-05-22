@@ -2,8 +2,23 @@
 @import "primeng/resources/primeng.css";
 
 
-body{
+body {
   margin: 0px;
   box-sizing: border-box;
-  background:rgb(209, 202, 202)
+  background: rgb(209, 202, 202)
+}
+
+* {
+  animation: fadeInAnimation ease 0.3s;
+  /* animation-iteration-count: 1; */
+  animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+
+  100% {
+      opacity: 1;
+  }
 }

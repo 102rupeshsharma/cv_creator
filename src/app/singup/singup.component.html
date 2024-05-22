@@ -21,14 +21,8 @@
                                         <input type="password" id="confirmPassword" name="confirmPassword"
                                                 placeholder="confirm password" [(ngModel)]="confirmPassword" required>
                                 </div>
-                                <div class="my-recaptcha-container">
-                                        <re-captcha (resolved)="onCaptchaResolved($event)"
-                                                siteKey="6LcjDtcpAAAAAFJ-HtnbWBxn23jj9N6ilKFTgEwm">
-                                        </re-captcha>
-                                </div>
                                 <div class="btn">
-                                        <button class="submit" type="submit"
-                                                [disabled]="!isCaptchaResolved">Register</button>
+                                        <button class="submit" type="submit">Register</button>
                                 </div>
                         </form>
                         <div class="signinText">
