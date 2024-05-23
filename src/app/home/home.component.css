@@ -1,41 +1,44 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap'); */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+    position: relative;
+}
 
-
-.container{
+.nav {
+    flex-grow: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
-    background-color: gold;
-    width:100%;
+    margin-left: 200px; 
 }
- .buttons{
-    position: absolute;
-    left: 1248px;
-    top: 12px;
-    height: 60px;
 
+.userbtn {
+    display: flex;
+    gap: 10px;
 }
-.buttons button{
+
+.userbtn button {
     color: white;
     width: 98px;
     height: 48px;
     border-radius: 13px;
     font-size: 19px;
-    background-color: rgb(69 63 63);
+    background-color: rgb(69, 63, 63);
     border: none;
-    margin:5px 5px 0px 5px;
+    margin: 5px 5px 0 5px;
     cursor: pointer;
-    /* box-shadow: 0 0 10px 0 #373838 inset, 0 0 20px 2px #535555; */
     transition: 0.1s all ease-in-out;
 }
-.buttons button:hover {
+
+.userbtn button:hover {
     transform: scale(1.1);
     background-color: rgb(28, 27, 27);
-
 }
 
 .intro_heading {
-    /* background-color: orange; */
     display: flex;
     justify-content: center;
     font-family: "Merriweather", serif;
@@ -70,7 +73,115 @@
 .p-button-lg:hover {
     transform: scale(1.1);
     background-color: rgb(28, 27, 27);
+}
+.hidden{
+    display: none;
+}
 
+.dropdown-menu {
+    position: relative;
+    display: none;
+}
+.dropdown-menu.show {
+    display: block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 48px;
+    right: 0;
+    background-color: gold;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content button {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: rgb(69, 63, 63);
+    color: white;
+    border: none;
+    text-align: left;
+  }
+  
+  .dropdown-content button:hover {
+    background-color: rgb(28, 27, 27);
+  }
+
+@media screen and (min-width:640px) and (max-width:900px) {
+    
+    .nav {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        margin-left: 160px;
+    }
+
+    .intro_heading {
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        font-family: "Merriweather", serif;
+        font-size: 38px;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .userbtn button {
+        color: white;
+        width: 73px;
+        height: 39px;
+        border-radius: 13px;
+        font-size: 15px;
+        background-color: rgb(69, 63, 63);
+        border: none;
+        margin: 5px 5px 0 5px;
+        cursor: pointer;
+        transition: 0.1s all ease-in-out;
+    }
+}
+
+@media screen and (max-width:640px) {
+    
+    .nav {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        margin-left: 160px;
+    }
+
+    .intro_heading {
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        font-family: "Merriweather", serif;
+        font-size: 38px;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .userbtn button {
+        color: white;
+        width: 73px;
+        height: 39px;
+        border-radius: 13px;
+        font-size: 15px;
+        background-color: rgb(69, 63, 63);
+        border: none;
+        margin: 5px 5px 0 5px;
+        cursor: pointer;
+        transition: 0.1s all ease-in-out;
+    }
+
+    .userbtn{
+        display: none;
+    }
+    .dropdown-menu{
+        display: block;
+    }
 }
 
 @media screen and (max-width: 439px) {
@@ -101,6 +212,14 @@
         transform: scale(1);
         background-color: rgb(28, 27, 27);
     }
+
+    /* .buttons{
+        position: absolute;
+        left: 1248px;
+        top: 12px;
+        height: 60px;
+    
+    } */
 
 
 }

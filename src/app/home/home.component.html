@@ -1,21 +1,24 @@
-<app-navbar></app-navbar>
-
-<div class="buttons">
-  <button routerLink="/login">Login</button>
-  <button routerLink="/signup">Sign Up</button>
+<div class="header">
+  <div class="nav">
+    <app-navbar></app-navbar>
+  </div>
+  <div class="userbtn" [ngClass]="{'hidden': isMobileView}">
+    <button routerLink="/login">Login</button>
+    <button routerLink="/signup">Sign Up</button>
+  </div>
+  <div class="dropdown-menu" [ngClass]="{'show': isDropdownVisible, 'hidden': !isMobileView}">
+    <button (click)="toggleDropdown()">Menu</button>
+    <div class="dropdown-content" *ngIf="isDropdownVisible">
+      <button routerLink="/login">Login</button>
+      <button routerLink="/signup">Sign Up</button>
+    </div>
+  </div>
 </div>
 
 <div class="intro_heading">
-    Create a professional Resume for freshers
+  Create a professional Resume for freshers
 </div>
 
-
-<div class="card flex ">
-    <button pButton
-      routerLink="/main"
-      type="button"
-      label="Create Ressume"
-      class="p-button-lg">
-    </button>
+<div class="card flex">
+  <button pButton routerLink="/main" type="button" label="Create Resume" class="p-button-lg"></button>
 </div>
-
