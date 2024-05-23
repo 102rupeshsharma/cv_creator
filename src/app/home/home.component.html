@@ -2,16 +2,9 @@
   <div class="nav">
     <app-navbar></app-navbar>
   </div>
-  <div class="userbtn" [ngClass]="{'hidden': isMobileView}">
+  <div class="userbtn">
     <button routerLink="/login">Login</button>
     <button routerLink="/signup">Sign Up</button>
-  </div>
-  <div class="dropdown-menu" [ngClass]="{'show': isDropdownVisible, 'hidden': !isMobileView}">
-    <button (click)="toggleDropdown()">Menu</button>
-    <div class="dropdown-content" *ngIf="isDropdownVisible">
-      <button routerLink="/login">Login</button>
-      <button routerLink="/signup">Sign Up</button>
-    </div>
   </div>
 </div>
 

@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap'); */
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -59,12 +59,12 @@
 }
 
 .p-button-lg {
-    width: 252px;
-    height: 70px;
+    width: 234px;
+    height: 59px;
     border-radius: 30px;
     border: none;
     position: relative;
-    font-size: 25px;
+    font-size: 18px;
     background-color: rgb(42, 39, 39);
     box-shadow: 0 0 10px 0 #373838 inset, 0 0 20px 2px #535555;
     transition: 0.1s all ease-in-out;
@@ -74,42 +74,6 @@
     transform: scale(1.1);
     background-color: rgb(28, 27, 27);
 }
-.hidden{
-    display: none;
-}
-
-.dropdown-menu {
-    position: relative;
-    display: none;
-}
-.dropdown-menu.show {
-    display: block;
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    top: 48px;
-    right: 0;
-    background-color: gold;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-
-  .dropdown-content button {
-    width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    background-color: rgb(69, 63, 63);
-    color: white;
-    border: none;
-    text-align: left;
-  }
-  
-  .dropdown-content button:hover {
-    background-color: rgb(28, 27, 27);
-  }
 
 @media screen and (min-width:640px) and (max-width:900px) {
     
@@ -144,21 +108,28 @@
     }
 }
 
-@media screen and (max-width:640px) {
+@media screen and (min-width:535px) and (max-width:640px) {
     
     .nav {
         flex-grow: 1;
         display: flex;
         justify-content: center;
-        margin-left: 160px;
+        margin-left: 25px;
     }
+
+    .userbtn .btn {
+        display: none;
+      }
+      .dropdown {
+        display: block;
+      }
 
     .intro_heading {
         background-color: transparent;
         display: flex;
         justify-content: center;
         font-family: "Merriweather", serif;
-        font-size: 38px;
+        font-size: 31px;
         font-weight: 400;
         font-style: normal;
     }
@@ -168,7 +139,7 @@
         width: 73px;
         height: 39px;
         border-radius: 13px;
-        font-size: 15px;
+        font-size: 26px;
         background-color: rgb(69, 63, 63);
         border: none;
         margin: 5px 5px 0 5px;
@@ -179,87 +150,131 @@
     .userbtn{
         display: none;
     }
-    .dropdown-menu{
-        display: block;
-    }
 }
 
-@media screen and (max-width: 439px) {
+
+@media screen and (max-width:535px) {
+    
+    .nav {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        margin-left: 25px;
+    }
 
     .intro_heading {
         background-color: transparent;
         display: flex;
         justify-content: center;
         font-family: "Merriweather", serif;
-        font-size: 40px;
+        font-size: 25px;
         font-weight: 400;
         font-style: normal;
     }
 
-    .btn {
-        width: 220px;
-        height: 61px;
-        border-radius: 30px;
+    .userbtn{
+        display: none;
+    }
+}
+@media screen and (min-width:350px) and (max-width:420px) {
+    .nav {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        margin-left: 20px;
+    }
+
+    .intro_heading {
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        font-family: "Merriweather", serif;
+        font-size: 20px;
+        font-weight: 400;
+        font-style: normal;
+    }
+
+    .p-button-lg {
+        width: 184px;
+        height: 50px;
+        border-radius: 20px;
         border: none;
         position: relative;
-        font-size: 21px;
+        font-size: 15px;
         background-color: rgb(42, 39, 39);
         box-shadow: 0 0 10px 0 #373838 inset, 0 0 20px 2px #535555;
         transition: 0.1s all ease-in-out;
     }
 
-    .btn:hover {
-        transform: scale(1);
-        background-color: rgb(28, 27, 27);
+    .userbtn{
+        display: none;
     }
 
-    /* .buttons{
-        position: absolute;
-        left: 1248px;
-        top: 12px;
-        height: 60px;
+    .intro_heading {
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+        font-family: "Merriweather", serif;
+        font-size: 25px;
+        font-weight: 400;
+        padding-left: 39px;
+        font-style: normal;
+    }
+}
+
+@media screen and (max-width:350px) {
     
-    } */
-
-
-}
-
-@media screen and (min-width: 281px) and (max-width: 324px) {
-    .intro_heading p {
-        font-size: 30px;
-        font-weight: 400;
-        width: auto;
+    .nav {
+        flex-grow: 1;
         display: flex;
         justify-content: center;
-        align-items: center;
-
+        margin-left: 20px;
     }
-}
 
-@media screen and (min-width:324px) and (max-width: 352px) {
-    .intro_heading p {
-        font-size: 35px;
-        width: auto;
+    .card{
+        width: 100vw;
+        height: 240px;
         display: flex;
         justify-content: center;
         align-items: center;
+        background-color: transparent;
+        border: none;
+    }
+
+    .intro_heading {
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
         font-family: "Merriweather", serif;
+        font-size: 20px;
         font-weight: 400;
         font-style: normal;
-
     }
-}
 
-@media screen and (min-width:200px) and (max-width: 280px) {
-    .intro_heading p {
-        font-size: 29px;
-        font-family: "Merriweather", serif;
-        font-weight: 300;
-        font-style: normal;
-        width: auto;
+    .p-button-lg {
+        width: 184px;
+        height: 50px;
+        border-radius: 20px;
+        border: none;
+        position: relative;
+        font-size: 15px;
+        background-color: rgb(42, 39, 39);
+        box-shadow: 0 0 10px 0 #373838 inset, 0 0 20px 2px #535555;
+        transition: 0.1s all ease-in-out;
+    }
+
+    .userbtn{
+        display: none;
+    }
+
+    .intro_heading {
+        background-color: transparent;
         display: flex;
         justify-content: center;
-        align-items: center;
-
+        font-family: "Merriweather", serif;
+        font-size: 25px;
+        font-weight: 400;
+        padding: 0px 25px;
+        font-style: normal;
     }
 }
