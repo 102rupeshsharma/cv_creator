@@ -15,7 +15,7 @@ body {
 }
 
 @font-face {
-  font-family: C;
+  font-family: headingFont;
   src: url(./assets/nothing-font-5x7.ttf);
 }
 
