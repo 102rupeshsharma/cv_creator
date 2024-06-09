@@ -72,14 +72,14 @@
 .intro_heading {
     display: flex;
     justify-content: center;
-    /* font-family: "Merriweather", serif; */
     color: #013564;
-    font-family: Poppins, sans-serif;
+    font-family: headingFont;
     font-size: 50px;
     font-weight: 300;
     font-style: normal;
     margin-top: 50px;
 }
+
 
 .card {
     width: 100vw;
@@ -114,7 +114,6 @@
         background-color: transparent;
         display: flex;
         justify-content: center;
-        font-family: "Merriweather", serif;
         font-size: 38px;
         font-weight: 400;
         font-style: normal;
@@ -179,7 +178,6 @@
         background-color: transparent;
         display: flex;
         justify-content: center;
-        font-family: "Merriweather", serif;
         font-size: 31px;
         font-weight: 400;
         font-style: normal;
@@ -246,7 +244,6 @@
         background-color: transparent;
         display: flex;
         justify-content: center;
-        font-family: "Merriweather", serif;
         font-size: 24px;
         font-weight: 400;
         font-style: normal;
@@ -290,7 +287,6 @@
         background-color: transparent;
         display: flex;
         justify-content: center;
-        font-family: "Merriweather", serif;
         font-size: 20px;
         font-weight: 400;
         font-style: normal;
@@ -314,7 +310,6 @@
         background-color: transparent;
         display: flex;
         justify-content: center;
-        font-family: "Merriweather", serif;
         font-size: 25px;
         font-weight: 400;
         padding-left: 39px;
@@ -357,7 +352,6 @@
         background-color: transparent;
         display: flex;
         justify-content: center;
-        font-family: "Merriweather", serif;
         font-size: 20px;
         font-weight: 400;
         padding: 0px 41px;
@@ -382,7 +376,6 @@
         background-color: transparent;
         display: flex;
         justify-content: center;
-        font-family: "Merriweather", serif;
         font-size: 25px;
         font-weight: 400;
         padding: 0px 25px;

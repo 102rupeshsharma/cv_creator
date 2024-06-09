@@ -15,8 +15,8 @@ body {
 }
 
 @font-face {
-  font-family: universal_font;
-  src: url(./assets/GangeRegular.otf);
+  font-family: C;
+  src: url(./assets/nothing-font-5x7.ttf);
 }
 
 /* @keyframes gradient {
