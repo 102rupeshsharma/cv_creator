@@ -1,95 +1,114 @@
-<div id="container" #content>
+<div class="container">
+    <div id="Cv_container">
 
-    <div class="name">
-        <p>{{ FullName | titlecase }} </p>
-    </div>
+        <div class="cv_content" #content>
 
-    <!-- basic info div -->
-    <div class="basicInfo">
-        <div class="contact">
-            <span id="phone">+91 {{ Phone }} </span>
-            <p class="gmail"> <a [href]="Email">{{ Email }} </a> </p>
-            <span id="city">{{ City | titlecase }} </span>,
-            <span id="state">{{ State | titlecase }} </span>
+
+            <div class="name">
+                <p>{{ FullName | titlecase }} </p>
+            </div>
+
+
+            <!-- basic info div -->
+            <div class="basicInfo">
+                <div class="contact">
+                    <span id="phone">+91 {{ Phone }} </span>
+                    <p class="gmail"> <a [href]="Email">{{ Email }} </a> </p>
+                    <span id="city">{{ City | titlecase }} </span>,
+                    <span id="state">{{ State | titlecase }} </span>
+                </div>
+                <div class="social">
+                    <a class="LinkdInProfile" [href]="LinkdInProfile"> {{ LinkdInProfile }} </a>
+                </div>
+            </div>
+            <div class="summary">
+                {{ Description }}
+            </div>
+            <hr>
+
+
+            <p class="skillheader">SKILLS</p>
+            <div class="skills">
+                <ul>
+                    <li *ngFor="let skill of Skills">
+                        {{ skill }}
+                    </li>
+                </ul>
+            </div>
+            <hr>
+
+
+            <div>
+                <p class="comapanyNameHeader">WORK EXPERIENCE</p>
+                <div class="companyInfo">
+                    <div *ngFor="let detail of workExperienceDetails" style="width: 724px; margin-left: 58px;">
+
+                        <div style="display: flex; justify-content: space-between;">
+                            <p> <span class="details">{{ detail.CompanyName }} </span> </p>
+                            <span>{{ detail.StartDate}}- {{detail.EndDate}} </span>
+                        </div>
+
+                        <p style="margin-top: 7px;"> {{
+                            detail.Position}} </p>
+
+                        <p style="margin-top: 7px;">{{detail.Summary }}</p>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <hr>
+
+
+            <div>
+                <p class="projectNameHeader">PROJECTS</p>
+                <div class="projectInfo">
+                    <div *ngFor="let detail of projectDetails">
+                        <p> <span class="details"> {{ detail.ProjectTitle }} </span></p>
+                        <p style="margin-top: 7px;"> {{ detail.projectUrl }} </p>
+
+                        <p style="margin-top: 7px;">{{ detail.projectDescription }} </p>
+                        <br>
+                    </div>
+
+                </div>
+            </div>
+            <hr>
+
+
+            <!-- Education div opened -->
+            <div>
+                <p class="educationHeader">EDUCATION</p>
+                <div class="collegeInfo">
+                    <div *ngFor="let education of educationDetails">
+                        <div>
+                            <p><span class="details">{{ education.Degree}}</span></p>
+                        </div>
+                        <div style="display: flex; justify-content: space-between;">
+                            <p>
+                                <span>{{ education.School}}, {{ education.City }}</span>
+                            </p>
+                            <p>{{education.StartDate}} - {{ education.EndDate}}</p>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <!--Education div closed-->
+
+
+            <!-- personal info div opened -->
+            <div class="personalInfo">
+                <p class="personalInfoHeader">Personal Details</p>
+
+                <div class="email" style="display: flex; padding: 0px 0px 30px 55px;">
+                    <p style="font-weight: 600; font-size: 20px;">Email-Id : </p>
+                    <p> <a [href]="Email"> {{ Email}} </a></p>
+                </div>
+            </div>
         </div>
-        <div class="social">
-            <a class="LinkdInProfile"> {{ LinkdInProfile }} </a>
-        </div>
     </div>
-    <div class="summary">
-        {{ Description }}
+    <div class="downlordbtn">
+        <button class="download" (click)="downloadresume()">Download</button>
     </div>
-
-    <hr>
-
-    <!-- skill div opened -->
-    <p class="skillheader">SKILLS</p>
-    <div class="skills">
-        <ul style="list-style-type: square;">
-            <li *ngFor="let skill of Skills">{{ skill }} </li>
-        </ul>
-    </div>
-
-    <hr>
-
-    <!-- Internship div opened -->
-    <div id="internship" *ngIf="internshipDetails.length > 0">
-        <p class="comapanyNameHeader">INTERNSHIP</p>
-        <div *ngFor="let detail of internshipDetails" class="internshipInfo">
-            <p> <span class="details">Company Name: </span> <span> {{ detail.companyName }} </span> </p>
-            <p style="margin-top: 7px;"> <span class="details">Position : </span> <span> {{ detail.position }}
-                </span>
-            </p>
-            <p style="margin-top: 7px;"><span class="details"> Certificate: <a [href]="detail.certificate"> {{
-                        detail.certificate }}</a> </span></p>
-
-            <p style="margin-top: 7px;"> <span class="details"> Project Info: </span> <span> {{ detail.projectInfo
-                    }}
-                </span> </p>
-            <br>
-        </div>
-        <hr>
-    </div>
-
-
-    <!-- project div opened -->
-    <div>
-        <p class="comapanyNameHeader">PROJECT WORKS</p>
-        <div *ngFor="let project of projectDetails" class="projectInfo">
-            <p> <span class="details"> Project Title: </span> <span> {{ project.ProjectTitle }} </span></p>
-            <p style="margin-top: 7px;"> <span class="details"> Project URL: </span> <a [href]="project.projectUrl">{{
-                    project.projectUrl }}</a> <span> </span> </p>
-            <p style="margin-top: 7px;"> <span class="details"> Project Description: </span> <span>{{
-                    project.projectDescription }}</span></p>
-            <br>
-        </div>
-    </div>
-
-    <hr>
-
-    <!-- Education div opened -->
-    <p class="educationHeader">EDUCATION</p>
-    <div class="education">
-
-        <div class="collegeInfo">
-            <p>{{ College | titlecase }},<span> {{ branch | titlecase }}</span> </p>
-            <p>{{ GraduationYear | date }}</p>
-        </div>
-    </div>
-
-
-    <hr>
-    <!-- personal info div opened -->
-    <div class="personalInfo">
-        <p class="personalInfoHeader">Personal Details</p>
-
-        <div class="email" style="display: flex; padding: 0px 0px 30px 55px;">
-            <p style="font-weight: 600; font-size: 20px;">Email-Id : </p>
-            <p> <a [href]="Email">{{ Email }} </a></p>
-        </div>
-    </div>
-
-</div>
-<div class="downlordbtn">
-    <button class="download" (click)="downloadresume()">Download</button>
 </div>

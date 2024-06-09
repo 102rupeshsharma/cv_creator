@@ -1,26 +1,26 @@
 <app-navbar id="nav"></app-navbar>
 
 <div class="heading">
-    Education Info
+    Experience
 </div>
 
 <div class="container">
     <form [formGroup]="signupForm" (ngSubmit)="storeData()">
-        <ng-container *ngFor="let detail of educationDetails; let i = index">
+        <ng-container *ngFor="let detail of workExperience; let i = index">
             <div class="sub_container">
                 <div>
-                    <input pInputText type="text" formControlName="school{{i}}" class="p-inputtext-lg"
-                        placeholder="School" />
-                    <span *ngIf="signupForm.get('school' + i)?.invalid && signupForm.get('school' + i)?.touched">
-                        *Enter your school name
+                    <input pInputText type="text" formControlName="company{{i}}" class="p-inputtext-lg"
+                        placeholder="Company Name" />
+                    <span *ngIf="signupForm.get('company' + i)?.invalid && signupForm.get('company' + i)?.touched">
+                        *Enter your company name
                     </span>
                 </div>
 
                 <div>
-                    <input pInputText type="text" formControlName="degree{{i}}" class="p-inputtext-lg"
-                        placeholder="Degree" />
-                    <span *ngIf="signupForm.get('degree' + i)?.invalid && signupForm.get('degree' + i)?.touched">
-                        *Enter your degree
+                    <input pInputText type="text" formControlName="position{{i}}" class="p-inputtext-lg"
+                        placeholder="Position" />
+                    <span *ngIf="signupForm.get('position' + i)?.invalid && signupForm.get('position' + i)?.touched">
+                        *Enter your position
                     </span>
                 </div>
 
@@ -31,7 +31,7 @@
                         onfocus="(this.type='month')" onblur="if(!this.value)this.type='text'">
                 </div>
 
-                <div>
+                <div class="city">
                     <input pInputText type="text" formControlName="city{{i}}" class="p-inputtext-lg"
                         placeholder="City" />
                     <span *ngIf="signupForm.get('city' + i)?.invalid && signupForm.get('city' + i)?.touched">
@@ -41,7 +41,7 @@
 
                 <div class="textarea">
                     <textarea name="textarea" formControlName="description{{i}}" id="textarea" cols="95" rows="5"
-                        style="resize: vertical;" placeholder="Description: e.g. Graduated with High"></textarea>
+                        style="resize: vertical;" placeholder="Summary"></textarea>
                     <span
                         *ngIf="signupForm.get('description' + i)?.invalid && signupForm.get('description' + i)?.touched">
                         *Describe yourself
@@ -49,12 +49,12 @@
                 </div>
             </div>
 
-            <button type="button" (click)="remove(i)" [disabled]="educationDetails.length <= 1">Remove</button>
+            <button type="button"  (click)="remove(i)" [disabled]="workExperience.length <= 1">Remove</button>
         </ng-container>
-        <button id="addMore" type="button" (click)="addMore()">Add More</button>
+        <button type="button" id="addMore" (click)="addMore()">Add More</button>
 
         <div class="btn_container">
-            <button type="button" [routerLink]="['/skills']" pButton label="Back" class="p-button-lg"></button>
+            <button  [routerLink]="['/main']" pButton label="Back" class="p-button-lg"></button>
             <button type="submit" [disabled]="signupForm.invalid" pButton label="Next" class="p-button-lg"></button>
         </div>
     </form>

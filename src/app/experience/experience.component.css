@@ -1,0 +1,833 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ .container {
+     display: flex;
+     align-items: center;
+     width: auto;
+     justify-content: center;
+     margin-top: 20px;
+ }
+
+ .heading {
+     font-family: "Roboto Slab", serif;
+     display: flex;
+     justify-content: center;
+     font-size: 50px;
+     margin-top: 10px;
+     height: auto;
+     width: auto;
+     color: #013564;
+ }
+
+ .sub_container {
+     display: grid;
+     grid-template-columns: 300px 300px;
+     grid-column-gap: 80px;
+     width: 750px;
+     height: auto;
+     margin: auto;
+ }
+
+ input {
+     border-radius: 5px;
+     border: none;
+     outline: none;
+     height: 50px;
+     width: 350px;
+     padding-left: 12px;
+     margin: 17px 12px;
+     align-items: center;
+     background-color: white;
+ }
+
+ .date_Container {
+     display: flex;
+     width: 374px;
+ }
+
+ .date_Container input {
+     width: 163px;
+     font-family: 'Arial', sans-serif;
+     padding: 6px 10px;
+     box-sizing: border-box;
+     border-radius: 5px;
+     border: none;
+     outline: none;
+     height: 50px;
+     padding-left: 12px;
+     margin: 17px 12px;
+     align-items: center;
+ }
+
+ #textarea {
+     margin: 0px 0px 10px 12px;
+     border: none;
+     width: 728px;
+     outline: none;
+     padding: 5px 5px;
+     overflow: auto;
+     resize: none;
+     height: auto;
+     background-color: white;
+
+ }
+
+ .textarea {
+     grid-column: 1/ span 2;
+ }
+
+
+ #addMore {
+     margin: 0px 0px 0px 15px;
+ }
+
+ .btn_container {
+     display: flex;
+     width: auto;
+     justify-content: space-between;
+     margin-top: 30px;
+     margin-bottom: 100px;
+ }
+
+ .p-button-lg {
+     width: 160px;
+     height: 60px;
+     font-size: 100px;
+     border-radius: 10px;
+     border: none;
+     font-size: 20px;
+     background-color: #1a91f0;
+ }
+
+ button {
+     color: white;
+     width: 130px;
+     height: 36px;
+     border-radius: 10px;
+     border: none;
+     outline: none;
+     cursor: pointer;
+     background-color: #1a91f0;
+     margin-left: 12px;
+ }
+
+ span {
+     position: relative;
+     left: 14px;
+     top: -18px;
+     color: red;
+     font-size: 14px;
+     font-weight: bold;
+ }
+
+ input.ng-invalid.ng-touched {
+     border: 2px solid red;
+ }
+
+ textarea.ng-invalid.ng-touched {
+     border: 2px solid red;
+ }
+
+ @media screen and (max-width:775px) {
+
+     .container {
+         justify-content: center;
+         height: auto;
+     }
+
+     .heading {
+         font-family: "Roboto Slab", serif;
+         display: flex;
+         justify-content: center;
+         font-size: 45px;
+         margin-top: 10px;
+         height: auto;
+         width: auto;
+     }
+
+
+     small {
+         color: red;
+         padding-left: 15px;
+         position: relative;
+         top: -15px;
+         font-weight: bold;
+     }
+
+     .sub_container {
+         display: grid;
+         grid-template-columns: 300px 300px;
+         grid-column-gap: 15px;
+         width: 620px;
+         height: auto;
+         margin: 20px auto;
+     }
+
+     input {
+         box-sizing: border-box;
+         border-radius: 5px;
+         border: none;
+         outline: none;
+         height: 47px;
+         width: 276px;
+         padding-left: 12px;
+         margin: 17px 14px;
+         align-items: center;
+         background-color: white;
+     }
+
+     .date_Container {
+         display: flex;
+         width: 324px;
+         /* background-color: orange; */
+     }
+
+     .date_Container input {
+         width: 123px;
+         font-family: 'Arial', sans-serif;
+         padding: 6px 10px;
+         box-sizing: border-box;
+         border-radius: 5px;
+         border: none;
+         outline: none;
+         height: 50px;
+         padding-left: 12px;
+         margin: 17px 12px;
+         align-items: center;
+     }
+
+     #textarea {
+         margin: 0px 0px 10px 12px;
+         border: none;
+         width: 595px;
+         outline: none;
+         padding: 5px 5px;
+         overflow: auto;
+         resize: none;
+         height: auto;
+         background-color: white;
+     }
+
+     .btn_container {
+         display: flex;
+         margin-top: 20px;
+         width: 605px;
+         justify-content: space-between;
+     }
+
+     .p-button-lg {
+         width: 160px;
+         height: 60px;
+         font-size: 100px;
+         border-radius: 10px;
+         border: none;
+         font-size: 20px;
+         background-color: #1a91f0;
+     }
+
+     span {
+         position: relative;
+         left: 14px;
+         top: 5px;
+         color: red;
+         font-size: 14px;
+         font-weight: bold;
+     }
+
+     input.ng-invalid.ng-touched {
+         border: 2px solid red;
+     }
+
+     textarea.ng-invalid.ng-touched {
+         border: 2px solid red;
+     }
+ }
+
+
+ @media screen and (max-width:630px) {
+
+     .container {
+         justify-content: center;
+         height: auto;
+     }
+
+     .heading {
+         font-family: "Roboto Slab", serif;
+         display: flex;
+         justify-content: center;
+         font-size: 34px;
+         margin-top: 10px;
+         height: auto;
+         width: auto;
+     }
+
+
+     small {
+         color: red;
+         padding-left: 15px;
+         position: relative;
+         top: -15px;
+         font-weight: bold;
+     }
+
+     .sub_container {
+         display: grid;
+         grid-template-columns: 260px 260px;
+         grid-column-gap: 15px;
+         width: 540px;
+         height: auto;
+         margin: 20px auto;
+     }
+
+     input {
+         box-sizing: border-box;
+         border-radius: 5px;
+         border: none;
+         outline: none;
+         height: 47px;
+         width: 250px;
+         padding-left: 12px;
+         margin: 17px 14px;
+         align-items: center;
+         background-color: white;
+     }
+
+     .date_Container input {
+         width: 124px;
+         font-family: 'Arial', sans-serif;
+         padding: 6px 10px;
+         box-sizing: border-box;
+         border-radius: 5px;
+         border: none;
+         outline: none;
+         height: 50px;
+         padding-left: 12px;
+         margin: 17px 6px;
+         align-items: center;
+     }
+
+     #textarea {
+         margin: 0px 0px 10px 12px;
+         border: none;
+         width: 529px;
+         outline: none;
+         padding: 5px 5px;
+         overflow: auto;
+         resize: none;
+         height: auto;
+
+     }
+
+     .btn_container {
+         display: flex;
+         margin-top: 20px;
+         width: 547px;
+         justify-content: space-between;
+     }
+
+     button {
+         color: white;
+         width: 130px;
+         height: 36px;
+         border-radius: 10px;
+         border: none;
+         outline: none;
+         cursor: pointer;
+         background-color: #1a91f0;
+     }
+
+     .p-button-lg {
+         width: 140px;
+         height: 45px;
+         font-size: 100px;
+         border-radius: 10px;
+         border: none;
+         font-size: 20px;
+         background-color: #1a91f0;
+     }
+
+     span {
+         position: relative;
+         left: 14px;
+         top: 5px;
+         color: red;
+         font-size: 14px;
+         font-weight: bold;
+     }
+
+     input.ng-invalid.ng-touched {
+         border: 2px solid red;
+     }
+
+     textarea.ng-invalid.ng-touched {
+         border: 2px solid red;
+     }
+ }
+
+
+ @media screen and (max-width:565px) {
+
+     .container {
+         justify-content: center;
+         height: auto;
+     }
+
+     .heading {
+         font-family: "Roboto Slab", serif;
+         display: flex;
+         justify-content: center;
+         font-size: 34px;
+         margin-top: 10px;
+         height: auto;
+         width: auto;
+     }
+
+     small {
+         color: red;
+         padding-left: 15px;
+         position: relative;
+         top: -15px;
+         font-weight: bold;
+     }
+
+     .sub_container {
+         display: grid;
+         grid-template-columns: 225px 225px;
+         grid-column-gap: 15px;
+         width: 495px;
+         height: auto;
+         margin: 0px auto;
+     }
+
+
+     input {
+         box-sizing: border-box;
+         border-radius: 5px;
+         border: none;
+         outline: none;
+         height: 47px;
+         width: 221px;
+         padding-left: 12px;
+         margin: 17px 14px;
+         align-items: center;
+     }
+
+
+     .date_Container {
+         width: 495px;
+         grid-column: 1/ span 2;
+     }
+
+     .city {
+         grid-column: 1/span 2;
+     }
+
+     .city input {
+         width: 463px;
+     }
+
+     .date_Container{
+        width: auto;
+        margin: auto;
+     }
+
+     .date_Container input {
+         width: 219px;
+         font-family: 'Arial', sans-serif;
+         padding: 6px 10px;
+         box-sizing: border-box;
+         border-radius: 5px;
+         border: none;
+         outline: none;
+         height: 50px;
+         padding-left: 12px;
+         margin: 17px 12px;
+         align-items: center;
+     }
+
+     #textarea {
+         margin: 0px 0px 10px 12px;
+         border: none;
+         width: 463px;
+         outline: none;
+         padding: 5px 5px;
+         overflow: auto;
+         resize: none;
+         height: auto;
+
+     }
+
+     .btn_container {
+         display: flex;
+         margin-top: 20px;
+         width: 463px;
+         justify-content: space-between;
+     }
+
+     .p-button-lg {
+        width: 140px;
+         height: 45px;
+         font-size: 100px;
+         border-radius: 10px;
+         border: none;
+         font-size: 20px;
+         background-color: #1a91f0;
+     }
+
+     span {
+         position: relative;
+         left: 14px;
+         top: 5px;
+         color: red;
+         font-size: 14px;
+         font-weight: bold;
+     }
+
+     input.ng-invalid.ng-touched {
+         border: 2px solid red;
+     }
+
+     textarea.ng-invalid.ng-touched {
+         border: 2px solid red;
+     }
+ }
+
+
+
+ @media screen and (max-width:520px) {
+
+     .container {
+         justify-content: center;
+         height: auto;
+         margin: auto;
+     }
+
+     .heading {
+         font-family: "Roboto Slab", serif;
+         display: flex;
+         justify-content: center;
+         font-size: 34px;
+         margin-top: 10px;
+         height: auto;
+         width: auto;
+     }
+
+
+     small {
+         color: red;
+         padding-left: 15px;
+         position: relative;
+         top: -15px;
+         font-weight: bold;
+     }
+
+     .sub_container {
+         display: flex;
+         flex-wrap: wrap;
+         width: 395px;
+         height: auto;
+         margin: 20px auto;
+     }
+
+     input {
+         box-sizing: border-box;
+         border-radius: 5px;
+         border: none;
+         outline: none;
+         height: 47px;
+         width: 336px;
+         padding-left: 12px;
+         margin: 17px 25px;
+         align-items: center;
+     }
+
+     .date_Container input {
+        width: 156px;
+        font-family: 'Arial', sans-serif;
+        padding: 6px 10px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        height: 50px;
+        padding-left: 12px;
+        margin: 17px 12px;
+        align-items: center;
+    }
+
+     .city input {
+        width: 342px;
+    }
+    
+    #textarea {
+        margin: 0px 0px 10px 12px;
+        border: none;
+        width: 342px;
+        outline: none;
+        padding: 5px 5px;
+        overflow: auto;
+        resize: none;
+        height: auto;
+        margin-left: 22px;
+
+    }
+
+     .btn_container {
+         display: flex;
+         width: 369px;
+         margin-top: 20px;
+         justify-content: space-between;
+     }
+
+     .p-button-lg {
+         width: 133px;
+         height: 49px;
+         font-size: 100px;
+         border-radius: 10px;
+         border: none;
+         font-size: 20px;
+         background-color: #1a91f0;
+     }
+
+     input.ng-invalid.ng-touched {
+         border: 2px solid red;
+     }
+
+     textarea.ng-invalid.ng-touched {
+         border: 2px solid red;
+     }
+ }
+
+
+
+ @media screen and (min-width:309px) and (max-width:412px) {
+
+     .container {
+         justify-content: center;
+         height: auto;
+     }
+
+     .heading {
+         font-family: "Roboto Slab", serif;
+         display: flex;
+         justify-content: center;
+         font-size: 20px;
+         margin-top: 10px;
+         height: auto;
+         width: auto;
+     }
+
+
+     small {
+         color: red;
+         padding-left: 15px;
+         position: relative;
+         top: -15px;
+         font-weight: bold;
+     }
+
+     .sub_container {
+         display: flex;
+         flex-wrap: wrap;
+         width: 309px;
+         height: auto;
+         margin: 10px auto;
+     }
+
+     input {
+         box-sizing: border-box;
+         border-radius: 5px;
+         border: none;
+         outline: none;
+         height: 42px;
+         width: 285px;
+         padding-left: 12px;
+         margin: 17px 14px;
+         align-items: center;
+     }
+
+     .date_Container {
+        margin: 0px 0px 0px 8px;
+     }
+
+     .date_Container input {
+        width: 137px;
+        font-family: "Arial", sans-serif;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        height: 45px;
+        padding-left: 9px;
+        margin: 10px 5px;
+    }
+
+     .city input {
+        width: 285px;
+    }
+    
+    #textarea {
+        margin: 0px 0px 10px 12px;
+        border: none;
+        width: 290px;
+        outline: none;
+        padding: 5px 5px;
+        overflow: auto;
+        resize: none;
+        height: auto;
+        margin-left: 10px;
+
+    }
+
+     .btn_container {
+         display: flex;
+         width: 293px;
+         margin-top: 20px;
+         justify-content: space-between;
+     }
+
+     .p-button-lg {
+         width: 133px;
+         height: 49px;
+         font-size: 100px;
+         border-radius: 10px;
+         border: none;
+         font-size: 20px;
+         background-color: #1a91f0;
+     }
+
+     #addMore {
+        margin: 0px 0px 36px 15px;
+    }
+   
+
+     input.ng-invalid.ng-touched {
+         border: 2px solid red;
+     }
+
+     textarea.ng-invalid.ng-touched {
+         border: 2px solid red;
+     }
+ }
+
+ @media screen and (max-width:308px) {
+
+     .container {
+         justify-content: center;
+         height: auto;
+         /* width: 250px; */
+         margin: 0px 15px;
+     }
+
+     .heading {
+         font-family: "Roboto Slab", serif;
+         display: flex;
+         justify-content: center;
+         font-size: 20px;
+         margin-top: 10px;
+         height: auto;
+         width: auto;
+     }
+
+
+     small {
+         color: red;
+         padding-left: 15px;
+         position: relative;
+         top: -15px;
+         font-weight: bold;
+     }
+
+     .sub_container {
+         display: flex;
+         flex-wrap: wrap;
+         width: 234px;
+         height: auto;
+         margin: 20px auto;
+     }
+
+     input {
+         box-sizing: border-box;
+         border-radius: 5px;
+         border: none;
+         outline: none;
+         height: 32px;
+         width: 207px;
+         padding-left: 8px;
+         margin: 17px 14px;
+         align-items: center;
+     }
+
+     .date_Container {
+        margin: 0px 0px 0px 8px;
+     }
+
+     .date_Container input {
+        width: 99px;
+        font-family: "Arial", sans-serif;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        height: 37px;
+        padding-left: 9px;
+        margin: 10px 5px;
+    }
+
+     .city input {
+        width: 207px;
+    }
+
+    #textarea {
+        margin: 0px 0px 10px 15px;
+        border: none;
+        width: 207px;
+        outline: none;
+        padding: 5px 5px;
+        overflow: auto;
+        resize: none;
+        height: auto;
+        margin-left: 10px;
+
+    }
+
+     .btn_container {
+         display: flex;
+         flex-wrap: wrap;
+         width: 238px;
+         margin: 21px 5px 5px 7px;
+         justify-content: space-evenly;
+     }
+
+     button {
+        color: white;
+        width: 105px;
+        height: 36px;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: #1a91f0;
+    }
+
+     .p-button-lg {
+         width: 100px;
+         margin: 0px 0px 15px 0px;
+         height: 35px;
+         font-size: 100px;
+         border-radius: 10px;
+         border: none;
+         font-size: 20px;
+         background-color: #1a91f0;
+     }
+
+     input.ng-invalid.ng-touched {
+         border: 2px solid red;
+     }
+
+     textarea.ng-invalid.ng-touched {
+         border: 2px solid red;
+     }
+ }

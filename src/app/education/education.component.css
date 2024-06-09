@@ -1,9 +1,17 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap'); */
-
-.container{
-    justify-content: center;
-    height: auto;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+.container {
+    display: flex;
+    align-items: center;
+    width: auto;
+    justify-content: center;
+    margin-top: 20px;
+}
+
 .heading {
     font-family: "Roboto Slab", serif;
     display: flex;
@@ -12,27 +20,19 @@
     margin-top: 10px;
     height: auto;
     width: auto;
+    color: #013564;
 }
 
-
-small{
-   color: red;
-   padding-left: 15px;
-   position: relative;
-   top: -15px;
-   font-weight: bold;
-}
-.sub_container{
+.sub_container {
     display: grid;
     grid-template-columns: 300px 300px;
     grid-column-gap: 80px;
     width: 750px;
     height: auto;
-    margin: 20px auto;
+    margin: auto;
 }
 
-input{
-    box-sizing: border-box;
+input {
     border-radius: 5px;
     border: none;
     outline: none;
@@ -41,99 +41,132 @@ input{
     padding-left: 12px;
     margin: 17px 12px;
     align-items: center;
+    background-color: white;
 }
 
-.btn_container{
+.date_Container {
+    display: flex;
+    width: 374px;
+}
+
+.date_Container input {
+    width: 163px;
+    font-family: 'Arial', sans-serif;
+    padding: 6px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    height: 50px;
+    /* width: 350px; */
+    padding-left: 12px;
+    margin: 17px 12px;
+    align-items: center;
+}
+
+#textarea {
+    margin: 0px 0px 10px 12px;
+    border: none;
+    width: 728px;
+    outline: none;
+    padding: 5px 5px;
+    overflow: auto;
+    resize: none;
+    height: auto;
+    background-color: white;
+}
+
+.textarea {
+    grid-column: 1/ span 2;
+}
+
+#addMore {
+    margin: 0px 0px 0px 15px;
+}
+
+.btn_container {
     display: flex;
     margin-top: 20px;
-    justify-content: space-evenly;
+    width: auto;
+    justify-content: space-between;
+    margin-bottom: 100px;
 }
-.p-button-lg{
+
+.p-button-lg {
     width: 160px;
     height: 60px;
     font-size: 100px;
-    border-radius: 30px;
+    border-radius: 10px;
     border: none;
     font-size: 20px;
-    background-color: rgb(42, 39, 39);
-    box-shadow: 0 0 10px 0 #373838 inset, 0 0 20px 2px #535555;
-}
-#addSkill{
-    border-top-right-radius: 0px;
-    border-bottom-right-radius: 0px;
-}
-#calendar{
-    margin-left: 12px;
-    padding-right: 20px;
-    height: 50px;
-    font-size: 15px;
-}
-.addbtn{
-    margin: 25px 0px;
-    position: relative;
-    left: -18px;
-    top: -8px;
-    height: 50px;
-    width: 90px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: rgb(90, 88, 88);
+    background-color: #1a91f0;
 }
 
-span{
+button {
+    color: white;
+    width: 130px;
+    height: 36px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: #1a91f0;
+    margin-left: 12px;
+}
+
+span {
     position: relative;
     left: 14px;
-    top: 5px;
-    /* border: 2px solid red; */
+    top: -18px;
     color: red;
     font-size: 14px;
     font-weight: bold;
 }
 
-input.ng-invalid.ng-touched{
+input.ng-invalid.ng-touched {
     border: 2px solid red;
 }
-textarea.ng-invalid.ng-touched{
+
+textarea.ng-invalid.ng-touched {
     border: 2px solid red;
 }
 
 @media screen and (max-width:770px) {
-    
-    .container{ 
+
+    .container {
         justify-content: center;
         height: auto;
     }
+
     .heading {
         font-family: "Roboto Slab", serif;
         display: flex;
         justify-content: center;
         font-size: 45px;
-        margin-top: 10px; 
+        margin-top: 10px;
         height: auto;
         width: auto;
     }
-    
-    
-    small{
-       color: red;
-       padding-left: 15px;
-       position: relative;
-       top: -15px;
-       font-weight: bold;
+
+
+    small {
+        color: red;
+        padding-left: 15px;
+        position: relative;
+        top: -15px;
+        font-weight: bold;
     }
-    .sub_container{
+
+    .sub_container {
         display: grid;
         grid-template-columns: 300px 300px;
         grid-column-gap: 15px;
         width: 620px;
-        height: auto; 
-        margin:20px auto;
+        height: auto;
+        margin: 20px auto;
     }
-    
-    input{
+
+    input {
         box-sizing: border-box;
         border-radius: 5px;
         border: none;
@@ -145,73 +178,79 @@ textarea.ng-invalid.ng-touched{
         align-items: center;
     }
 
-    #calendar{
-        margin-left: 14px;
-        padding-right: 20px;
-        height: 50px;
-        font-size: 15px;
+    .date_Container {
+        display: flex;
+        width: auto;
     }
-    
-    .btn_container{
+
+    .date_Container input {
+        width: 128px;
+        font-family: 'Arial', sans-serif;
+        padding: 6px 10px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        height: 50px;
+        padding-left: 12px;
+        margin: 17px 12px;
+        align-items: center;
+    }
+
+    #textarea {
+        margin: 0px 0px 10px 12px;
+        border: none;
+        width: 593px;
+        outline: none;
+        padding: 5px 5px;
+        overflow: auto;
+        resize: none;
+        height: auto;
+        background-color: white;
+    }
+
+    .btn_container {
         display: flex;
         margin-top: 20px;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
-    .p-button-lg{
+
+    .p-button-lg {
         width: 160px;
         height: 60px;
         font-size: 100px;
-        border-radius: 30px;
+        border-radius: 10px;
         border: none;
         font-size: 20px;
-        background-color: rgb(42, 39, 39);
-        box-shadow: 0 0 10px 0 #373838 inset, 0 0 20px 2px #535555;
+        background-color: #1a91f0;
     }
-    #addSkill{
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
-    }
-    
-    .addbtn{
-        margin: 25px 0px;
-        position: relative;
-        left: -18px;
-        top: -8px;
-        height: 50px;
-        width: 90px;
-        outline: none;
-        border: none;
-        cursor: pointer;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-        background-color: rgb(90, 88, 88);
-    }
-    
-    span{
+
+    span {
         position: relative;
         left: 14px;
         top: 5px;
-        /* border: 2px solid red; */
         color: red;
         font-size: 14px;
         font-weight: bold;
     }
-    
-    input.ng-invalid.ng-touched{
+
+    input.ng-invalid.ng-touched {
         border: 2px solid red;
     }
-    textarea.ng-invalid.ng-touched{
+
+    textarea.ng-invalid.ng-touched {
         border: 2px solid red;
     }
 }
 
 
 @media screen and (max-width:630px) {
-    
-    .container{ 
+
+    .container {
         justify-content: center;
         height: auto;
     }
+
     .heading {
         font-family: "Roboto Slab", serif;
         display: flex;
@@ -221,25 +260,26 @@ textarea.ng-invalid.ng-touched{
         height: auto;
         width: auto;
     }
-    
-    
-    small{
-       color: red;
-       padding-left: 15px;
-       position: relative;
-       top: -15px;
-       font-weight: bold;
+
+
+    small {
+        color: red;
+        padding-left: 15px;
+        position: relative;
+        top: -15px;
+        font-weight: bold;
     }
-    .sub_container{
+
+    .sub_container {
         display: grid;
         grid-template-columns: 260px 260px;
         grid-column-gap: 15px;
         width: 540px;
         height: auto;
-        margin:20px auto;
+        margin: 20px auto;
     }
-    
-    input{
+
+    input {
         box-sizing: border-box;
         border-radius: 5px;
         border: none;
@@ -251,73 +291,73 @@ textarea.ng-invalid.ng-touched{
         align-items: center;
     }
 
-    #calendar{
-        margin-left: 14px;
-        padding-right: 20px;
-        height: 50px;
-        font-size: 15px;
+    .date_Container {
+        display: flex;
+        width: auto;
+        /* background-color: orange; */
     }
-    
-    .btn_container{
+
+    .date_Container input {
+        width: 114px;
+        font-family: 'Arial', sans-serif;
+        padding: 6px 10px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        height: 50px;
+        padding-left: 12px;
+        margin: 17px 8px;
+        align-items: center;
+    }
+
+    #textarea {
+        width: 529px;
+    }
+
+    .btn_container {
         display: flex;
         margin-top: 20px;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
-    .p-button-lg{
+
+    .p-button-lg {
         width: 160px;
         height: 60px;
         font-size: 100px;
-        border-radius: 30px;
+        border-radius: 10px;
         border: none;
         font-size: 20px;
-        background-color: rgb(42, 39, 39);
-        box-shadow: 0 0 10px 0 #373838 inset, 0 0 20px 2px #535555;
+        background-color: #1a91f0;
     }
-    #addSkill{
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
-    }
-    
-    .addbtn{
-        margin: 25px 0px;
-        position: relative;
-        left: -18px;
-        top: -8px;
-        height: 50px;
-        width: 90px;
-        outline: none;
-        border: none;
-        cursor: pointer;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-        background-color: rgb(90, 88, 88);
-    }
-    
-    span{
+
+
+    span {
         position: relative;
         left: 14px;
         top: 5px;
-        /* border: 2px solid red; */
         color: red;
         font-size: 14px;
         font-weight: bold;
     }
-    
-    input.ng-invalid.ng-touched{
+
+    input.ng-invalid.ng-touched {
         border: 2px solid red;
     }
-    textarea.ng-invalid.ng-touched{
+
+    textarea.ng-invalid.ng-touched {
         border: 2px solid red;
     }
 }
 
 
 @media screen and (max-width:565px) {
-    
-    .container{
+
+    .container {
         justify-content: center;
         height: auto;
     }
+
     .heading {
         font-family: "Roboto Slab", serif;
         display: flex;
@@ -327,25 +367,26 @@ textarea.ng-invalid.ng-touched{
         height: auto;
         width: auto;
     }
-    
-    
-    small{
-       color: red;
-       padding-left: 15px;
-       position: relative;
-       top: -15px;
-       font-weight: bold;
+
+
+    small {
+        color: red;
+        padding-left: 15px;
+        position: relative;
+        top: -15px;
+        font-weight: bold;
     }
-    .sub_container{
+
+    .sub_container {
         display: grid;
         grid-template-columns: 225px 225px;
         grid-column-gap: 15px;
         width: 495px;
         height: auto;
-        margin:20px auto;
+        margin: 20px auto;
     }
-    
-    input{
+
+    input {
         box-sizing: border-box;
         border-radius: 5px;
         border: none;
@@ -357,62 +398,53 @@ textarea.ng-invalid.ng-touched{
         align-items: center;
     }
 
-    #calendar{
-        margin-left: 14px;
-        padding-right: 20px;
-        height: 50px;
-        font-size: 15px;
+    .date_Container input {
+        width: 105px;
+        font-family: "Arial", sans-serif;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        height: 46px;
+        padding-left: 7px;
+        margin: 17px 8px;
+        align-items: center;
     }
-    
-    .btn_container{
+
+    #textarea {
+        width: 464px;
+    }
+
+    .btn_container {
         display: flex;
         margin-top: 20px;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
-    .p-button-lg{
+
+    .p-button-lg {
         width: 160px;
         height: 60px;
         font-size: 100px;
-        border-radius: 30px;
+        border-radius: 10px;
         border: none;
         font-size: 20px;
-        background-color: rgb(42, 39, 39);
-        box-shadow: 0 0 10px 0 #373838 inset, 0 0 20px 2px #535555;
+        background-color: #1a91f0;
     }
-    #addSkill{
-        border-top-right-radius: 0px;
-        border-bottom-right-radius: 0px;
-    }
-    
-    .addbtn{
-        margin: 25px 0px;
-        position: relative;
-        left: -18px;
-        top: -8px;
-        height: 50px;
-        width: 90px;
-        outline: none;
-        border: none;
-        cursor: pointer;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-        background-color: rgb(90, 88, 88);
-    }
-    
-    span{
+
+    span {
         position: relative;
         left: 14px;
         top: 5px;
-        /* border: 2px solid red; */
         color: red;
         font-size: 14px;
         font-weight: bold;
     }
-    
-    input.ng-invalid.ng-touched{
+
+    input.ng-invalid.ng-touched {
         border: 2px solid red;
     }
-    textarea.ng-invalid.ng-touched{
+
+    textarea.ng-invalid.ng-touched {
         border: 2px solid red;
     }
 }
@@ -420,12 +452,13 @@ textarea.ng-invalid.ng-touched{
 
 
 @media screen and (max-width:520px) {
-    
-    .container{
+
+    .container {
         justify-content: center;
         height: auto;
         margin: auto;
     }
+
     .heading {
         font-family: "Roboto Slab", serif;
         display: flex;
@@ -435,24 +468,25 @@ textarea.ng-invalid.ng-touched{
         height: auto;
         width: auto;
     }
-    
-    
-    small{
-       color: red;
-       padding-left: 15px;
-       position: relative;
-       top: -15px;
-       font-weight: bold;
+
+
+    small {
+        color: red;
+        padding-left: 15px;
+        position: relative;
+        top: -15px;
+        font-weight: bold;
     }
-    .sub_container{
+
+    .sub_container {
         display: flex;
         flex-wrap: wrap;
         width: 395px;
         height: auto;
-        margin:20px auto;
+        margin: 20px auto;
     }
-    
-    input{
+
+    input {
         box-sizing: border-box;
         border-radius: 5px;
         border: none;
@@ -461,36 +495,48 @@ textarea.ng-invalid.ng-touched{
         width: 336px;
         padding-left: 12px;
         margin: 17px 25px;
+        margin-left: 15px;
         align-items: center;
     }
 
-    #calendar{
-        margin-left: 25px;
-        padding-right: 20px;
-        height: 50px;
-        font-size: 15px;
+    .date_Container input {
+        width: 171px;
+        font-family: "Arial", sans-serif;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        height: 46px;
+        padding-left: 7px;
+        margin: 17px 8px;
+        align-items: center;
     }
-    
-    .btn_container{
+
+    #textarea {
+        width: 351px;
+    }
+
+    .btn_container {
         display: flex;
         margin-top: 20px;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
-    .p-button-lg{
+
+    .p-button-lg {
         width: 153px;
         height: 49px;
         font-size: 100px;
-        border-radius: 30px;
+        border-radius: 10px;
         border: none;
         font-size: 20px;
-        background-color: rgb(42, 39, 39);
-        box-shadow: 0 0 10px 0 #373838 inset, 0 0 20px 2px #535555;
+        background-color: #1a91f0;
     }
-    
-    input.ng-invalid.ng-touched{
+
+    input.ng-invalid.ng-touched {
         border: 2px solid red;
     }
-    textarea.ng-invalid.ng-touched{
+
+    textarea.ng-invalid.ng-touched {
         border: 2px solid red;
     }
 }
@@ -498,11 +544,12 @@ textarea.ng-invalid.ng-touched{
 
 
 @media screen and (min-width:309px) and (max-width:412px) {
-    
-    .container{
+
+    .container {
         justify-content: center;
         height: auto;
     }
+
     .heading {
         font-family: "Roboto Slab", serif;
         display: flex;
@@ -512,24 +559,25 @@ textarea.ng-invalid.ng-touched{
         height: auto;
         width: auto;
     }
-    
-    
-    small{
-       color: red;
-       padding-left: 15px;
-       position: relative;
-       top: -15px;
-       font-weight: bold;
+
+
+    small {
+        color: red;
+        padding-left: 15px;
+        position: relative;
+        top: -15px;
+        font-weight: bold;
     }
-    .sub_container{
+
+    .sub_container {
         display: flex;
         flex-wrap: wrap;
         width: 309px;
         height: auto;
-        margin:10px auto;
+        margin: 10px auto;
     }
-    
-    input{
+
+    input {
         box-sizing: border-box;
         border-radius: 5px;
         border: none;
@@ -541,35 +589,37 @@ textarea.ng-invalid.ng-touched{
         align-items: center;
     }
 
-    #calendar{
-        margin-left: 14px;
-        padding-right: 20px;
-        height: 50px;
-        font-size: 15px;
+    #textarea {
+        width: 276px;
     }
-    
-    .btn_container{
+
+    .date_Container input {
+        width: 130px;
+    }
+
+    .btn_container {
         display: flex;
         flex-wrap: wrap;
         margin: 10px;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
-    .p-button-lg{
+
+    .p-button-lg {
         width: 114px;
         margin: 0px 0px 15px 0px;
         height: 40px;
         font-size: 50px;
-        border-radius: 30px;
+        border-radius: 10px;
         border: none;
         font-size: 20px;
-        background-color: rgb(42, 39, 39);
-        box-shadow: 0 0 10px 0 #373838 inset, 0 0 20px 2px #535555;
+        background-color: #1a91f0;
     }
-    
-    input.ng-invalid.ng-touched{
+
+    input.ng-invalid.ng-touched {
         border: 2px solid red;
     }
-    textarea.ng-invalid.ng-touched{
+
+    textarea.ng-invalid.ng-touched {
         border: 2px solid red;
     }
 }
@@ -580,11 +630,12 @@ textarea.ng-invalid.ng-touched{
 
 
 @media screen and (max-width:308px) {
-    
-    .container{
+
+    .container {
         justify-content: center;
         height: auto;
     }
+
     .heading {
         font-family: "Roboto Slab", serif;
         display: flex;
@@ -594,24 +645,25 @@ textarea.ng-invalid.ng-touched{
         height: auto;
         width: auto;
     }
-    
-    
-    small{
-       color: red;
-       padding-left: 15px;
-       position: relative;
-       top: -15px;
-       font-weight: bold;
+
+
+    small {
+        color: red;
+        padding-left: 15px;
+        position: relative;
+        top: -15px;
+        font-weight: bold;
     }
-    .sub_container{
+
+    .sub_container {
         display: flex;
         flex-wrap: wrap;
         width: 234px;
         height: auto;
-        margin:20px auto;
+        margin: 20px auto;
     }
-    
-    input{
+
+    input {
         box-sizing: border-box;
         border-radius: 5px;
         border: none;
@@ -623,36 +675,58 @@ textarea.ng-invalid.ng-touched{
         align-items: center;
     }
 
-    #calendar{
-        margin-left: 14px;
-        padding-right: 20px;
-        height: 50px;
-        font-size: 15px;
+    #textarea {
+        width: 205px;
     }
-    
-    .btn_container{
+
+    .date_Container input {
+        width: 95px;
+        font-family: "Arial", sans-serif;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        height: 37px;
+        padding-left: 8px;
+        margin: 1px 11px;
+        align-items: center;
+    }
+
+    .btn_container {
         display: flex;
         flex-wrap: wrap;
         margin: 10px;
-        justify-content: space-evenly;
+        justify-content: space-between;
     }
-    .p-button-lg{
-        width: 142px;
+
+    button {
+        color: white;
+        width: 97px;
+        height: 36px;
+        border-radius: 10px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        background-color: #1a91f0;
+        margin-left: 12px;
+    }
+
+    .p-button-lg {
+        width: 103px;
         margin: 0px 0px 15px 0px;
         height: 40px;
         font-size: 100px;
-        border-radius: 30px;
+        border-radius: 10px;
         border: none;
         font-size: 20px;
-        background-color: rgb(42, 39, 39);
-        box-shadow: 0 0 10px 0 #373838 inset, 0 0 20px 2px #535555;
+        background-color: #1a91f0;
     }
-    
-    input.ng-invalid.ng-touched{
+
+    input.ng-invalid.ng-touched {
         border: 2px solid red;
     }
-    textarea.ng-invalid.ng-touched{
+
+    textarea.ng-invalid.ng-touched {
         border: 2px solid red;
     }
 }
-

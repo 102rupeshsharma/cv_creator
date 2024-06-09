@@ -6,19 +6,12 @@ import { Component, HostListener } from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  dropdownOpen = false;
+  
+  // isOpen = false;
 
-  toggleDropdown() {
-    this.dropdownOpen = !this.dropdownOpen;
-  }
-
-  @HostListener('document:click', ['$event'])
-  onDocumentClick(event: Event) {
-    const targetElement = event.target as HTMLElement;
-    if (!targetElement.closest('.dropdown')) {
-      this.dropdownOpen = false;
-    }
-  }
+  // toggleDropdown() {
+  //   this.isOpen = !this.isOpen;
+  // }
 }
 
 

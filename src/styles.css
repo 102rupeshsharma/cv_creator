@@ -1,24 +1,50 @@
 @import "primeng/resources/themes/lara-light-blue/theme.css";
 @import "primeng/resources/primeng.css";
 
+* {
+  animation: fadeInAnimation ease 0.3s;
+  animation-fill-mode: forwards;
+}
 
 body {
   margin: 0px;
+  background-size: 400%;
   box-sizing: border-box;
-  background: rgb(209, 202, 202)
+  background: rgb(203, 203, 203);
+  background: radial-gradient(circle, rgba(203, 203, 203, 1) 0%, rgba(209, 209, 209, 1) 50%, rgba(119, 119, 119, 1) 100%);
 }
 
-* {
-  animation: fadeInAnimation ease 0.3s;
-  /* animation-iteration-count: 1; */
-  animation-fill-mode: forwards;
+@font-face {
+  font-family: universal_font;
+  src: url(./assets/GangeRegular.otf);
 }
+
+/* @keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+} */
+
+input {
+  background-color: rgb(227, 227, 227);
+}
+
+textarea {
+  background-color: rgb(227, 227, 227);
+}
+
 @keyframes fadeInAnimation {
   0% {
-      opacity: 0;
+    opacity: 0;
   }
 
   100% {
-      opacity: 1;
+    opacity: 1;
   }
 }

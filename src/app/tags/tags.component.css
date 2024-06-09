@@ -1,6 +1,15 @@
 .skilsTag{
     border-radius: 5px;
     margin: 5px;
-    background-color: rgb(132, 135, 128);
+    background-color: rgb(83 138 225);
     padding: 4px 10px;
+}
+.remove-btn{
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(229, 229, 229);
+    margin:0px 0px 1px 10px;
+    border-radius: 50%;
+    cursor: pointer;
 }

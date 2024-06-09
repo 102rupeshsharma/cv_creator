@@ -1,89 +1,75 @@
 <app-navbar></app-navbar>
- 
+<div>
 <div class="heading">
-    Enter Your Details
+    Personal Details
 </div>
 
 <div class="contaier">
 
-<form [formGroup]="signupForm" (ngSubmit)="storeData(signupForm)">
-    <div class="sub_container">
-        <div>
-            <input pInputText type="text" formControlName="fullname" id="fullName" name="name"
-                class="p-inputtext-lg" placeholder="Full Name" [(ngModel)]="nameValue"
-                (input)="onFullNameChange()"  #fullName />
-            <small *ngIf="signupForm.get('fullname')?.invalid && signupForm.get('fullname')?.touched">*Enter your
-                full name</small>
-        </div>
+    <form [formGroup]="signupForm" (ngSubmit)="storeData(signupForm)">
+        <div class="sub_container">
 
-        <div>
-            <input pInputText type="text" formControlName="linkdinprofileurl" class="p-inputtext-lg"
-                placeholder="LinkdIn Profile Url" #linkdinurl />
-            <small
-                *ngIf="signupForm.get('linkdinprofileurl')?.invalid && signupForm.get('linkdinprofileurl')?.touched">*Enter
-                your full linkdIn profile Url</small>
-        </div>
-
-        <div>
-            <input pInputText type="email" formControlName="email" name="email" id="email" class="p-inputtext-lg"
-                placeholder="Gmail" #Gmail/>
-            <small *ngIf="signupForm.get('email')?.invalid && signupForm.get('email')?.touched">*Enter your valid
-                email</small>
-        </div>
-
-        <div>
-            <input pInputText pKeyFilter="int" formControlName="phone" min="10" max="10"
-                placeholder="Phone Number" #Phone />
-            <small *ngIf="signupForm.get('phone')?.invalid && signupForm.get('phone')?.touched">*Enter your 10
-                digits phone number</small>
-        </div>
-
-        <div class="textarea">
-            <textarea name="textarea" formControlName="description" id="textarea" cols="95" rows="5" style="resize: vertical;"
-                placeholder="Enter the Description" #Description ></textarea>
-            <small
-                *ngIf="signupForm.get('description')?.invalid && signupForm.get('description')?.touched">*Describe
-                yourself</small>
-        </div>
-
-        <div>
-            <input type="text" formControlName="city" placeholder="City" [(ngModel)]="cityValue"
-                (input)="onCityValueChange()" #City />
-            <small *ngIf="signupForm.get('city')?.invalid && signupForm.get('city')?.touched">*Enter your
-                City</small>
-        </div>
-
-        <div>
-            <input type="text" formControlName="state" placeholder="State" [(ngModel)]="stateValue"
-                (input)="onStateValueChange()" #state />
-            <small *ngIf="signupForm.get('state')?.invalid && signupForm.get('state')?.touched">*Enter your
-                State</small>
-        </div>
-
-        <div class="skills">
-            <input type="text" id="addSkill" formControlName="skills" class="p-inputtext-lg"
-                #skillinput placeholder="Skills" name="skill" [(ngModel)]="skillValue"
-                (input)="onSkillValueChange()" />
-            <small *ngIf="signupForm.get('skills')?.invalid && signupForm.get('skills')?.touched">*Add atleast one
-                skill</small>
-        </div>
-        <div class="btn">
             <div>
-                <button [disabled]="skillinput.value.length < 2" type="button" class="addbtn"
-                    (click)="addSkill(skillinput)">Add</button>
+                <input pInputText type="text" formControlName="fullname" id="fullName" name="name"
+                    class="p-inputtext-lg" placeholder="Full Name" [(ngModel)]="nameValue" (input)="onFullNameChange()"
+                    #fullName />
+
+                    <small
+                    *ngIf="signupForm.get('fullname')?.invalid && signupForm.get('fullname')?.touched">*Enter
+                    your full name</small>
             </div>
+
+            <div>
+                <input pInputText type="text" formControlName="linkdinprofileurl" class="p-inputtext-lg"
+                    placeholder="LinkdIn Profile Url" #linkdinurl />
+                <small
+                    *ngIf="signupForm.get('linkdinprofileurl')?.invalid && signupForm.get('linkdinprofileurl')?.touched">*Enter
+                    your full linkdIn profile Url</small>
+            </div>
+
+            <div>
+                <input pInputText type="email" formControlName="email" name="email" id="email" class="p-inputtext-lg"
+                    placeholder="Email" #Gmail />
+                <small *ngIf="signupForm.get('email')?.invalid && signupForm.get('email')?.touched">*Enter your valid
+                    Email</small>
+            </div>
+
+            <div>
+                <input pInputText pKeyFilter="int" formControlName="phone" min="10" max="10" placeholder="Phone Number"
+                #Phone />
+                <small *ngIf="signupForm.get('phone')?.invalid && signupForm.get('phone')?.touched">*Enter your 10
+                    digits phone number</small>
+            </div>
+
+            <div class="textarea">
+                <textarea name="textarea" formControlName="description" id="textarea" cols="95" rows="5"
+                    style="resize: vertical;" placeholder="Professional Summary" #Description></textarea>
+                <small
+                    *ngIf="signupForm.get('description')?.invalid && signupForm.get('description')?.touched">*Describe
+                    yourself</small>
+            </div>
+
+            <div>
+                <input type="text" formControlName="city" placeholder="City" [(ngModel)]="cityValue"
+                    (input)="onCityValueChange()" #City />
+                <small *ngIf="signupForm.get('city')?.invalid && signupForm.get('city')?.touched">*Enter your
+                    City</small>
+            </div>
+
+            <div>
+                <input type="text" formControlName="state" placeholder="State" [(ngModel)]="stateValue"
+                    (input)="onStateValueChange()" #state />
+                <small *ngIf="signupForm.get('state')?.invalid && signupForm.get('state')?.touched">*Enter your
+                    State</small>
+            </div>
+
+        </div>   
+
+        <div class="btn_container">
+
+            <button type="submit" [disabled]="signupForm.invalid" pButton value="store Data" label="Next"
+                class="p-button-lg"> </button>
+
         </div>
-        
-    </div>
-
-    <app-tags class="tag" [skills]="formdataservice.skills"> </app-tags>
-
-    <div class="btn_container">
-
-        <button type="submit" [disabled]="signupForm.invalid" pButton value="store Data" label="Next"
-            class="p-button-lg"> </button>
-
-    </div>
-</form>
-</div> 
-
+    </form>
+</div>

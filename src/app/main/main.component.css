@@ -1,4 +1,3 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap'); */
 
 * {
     padding: 0;
@@ -13,7 +12,7 @@
     justify-content: center;
     font-size: 50px;
     margin-top: 13px;
-    /* background-color: greenyellow; */
+    color: #013564;
     height: auto;
     width: auto;
 }
@@ -33,7 +32,6 @@
     grid-column-gap: 80px;
     width: 750px;
     height: auto;
-    /* background-color: rgb(228, 62, 62); */
     margin: auto;
 }
 
@@ -47,6 +45,7 @@ input {
     padding-left: 12px;
     margin: 17px 12px;
     align-items: center;
+    background-color: white;
 }
 
 #textarea {
@@ -58,7 +57,7 @@ input {
     overflow: auto;
     resize: vertical;
     height: auto;
-
+    background-color: white;
 }
 
 .textarea {
@@ -71,64 +70,16 @@ input {
     align-items: center;
     width: 750px;
     margin: 20px 0px;
-    
-    /* background-color: aqua; */
 }
 
 .p-button-lg {
-    width: 160px;
+    width: 300px;
     height: 60px;
     font-size: 100px;
-    border-radius: 30px;
+    border-radius: 10px;
     border: none;
     font-size: 20px;
-    outline: none;
-    background-color: rgb(42, 39, 39);
-    box-shadow: 0 0 10px 0 #373838 inset, 0 0 20px 2px #535555;
-}
-
-.tag {
-    display: flex;
-    flex-wrap: wrap;
-    width: 750px;
-    margin-left: 20px;
-}
-.btn{
-    width: 90px;
-    height: 100px;
-    
-}
-
-.addbtn {
-    margin: 25px 0px;
-    position: relative;
-    left: -23px;
-    top: -9px;
-    height: 50px;
-    width: 90px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: rgb(90, 88, 88);
-    color: black;
-}
-
-.addbtn[disabled] {
-    margin: 25px 0px;
-    position: relative;
-    left: -23px;
-    top: -9px;
-    height: 50px;
-    width: 90px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: rgb(90, 88, 88);
-    color: rgb(32, 29, 29);
+    background-color: #1a91f0;
 }
 
 small {
@@ -150,7 +101,6 @@ textarea.ng-invalid.ng-touched {
 @media screen and (min-width:650px) and (max-width:790px) {
 
     .contaier {
-        /* background-color: pink; */
         display: flex;
         align-items: center;
         width: 660px;
@@ -185,6 +135,7 @@ textarea.ng-invalid.ng-touched {
         padding-left: 15px;
         margin: 13px 14px;
         align-items: center;
+        background-color: white;
     }
 
     #textarea {
@@ -197,17 +148,17 @@ textarea.ng-invalid.ng-touched {
         resize: vertical;
         height: auto;
         width: 610px;
+        background-color: white;
     }
 
     .p-button-lg {
         width: 160px;
         height: 60px;
         font-size: 100px;
-        border-radius: 30px;
+        border-radius: 10px;
         border: none;
         font-size: 20px;
-        background-color: rgb(42, 39, 39);
-        box-shadow: 0 0 10px 0 #373838 inset, 0 0 20px 2px #535555;
+        background-color: #1a91f0;
     }
 
     .btn_container {
@@ -217,47 +168,6 @@ textarea.ng-invalid.ng-touched {
         margin: auto;
         margin-top: 20px;
         width: 650px;
-        /* background-color: aqua; */
-    }
-
-    .tag {
-        display: flex;
-        flex-wrap: wrap;
-        width: 660px;
-        margin: auto;
-
-    }
-
-    .addbtn {
-        margin: 25px 0px;
-        position: relative;
-        left: -17px;
-        top: -12px;
-        height: 41px;
-        width: 84px;
-        outline: none;
-        border: none;
-        cursor: pointer;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-        background-color: rgb(90, 88, 88);
-        color: black;
-    }
-
-    .addbtn[disabled] {
-        margin: 25px 0px;
-        position: relative;
-        left: -17px;
-        top: -12px;
-        height: 41px;
-        width: 84px;
-        outline: none;
-        border: none;
-        cursor: pointer;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-        background-color: rgb(90, 88, 88);
-        color: rgb(32, 29, 29);
     }
 
 }
@@ -266,7 +176,6 @@ textarea.ng-invalid.ng-touched {
 @media screen and (min-width:550px) and (max-width:650px) {
 
     .contaier {
-        /* background-color: pink; */
         display: flex;
         align-items: center;
         width: 550px;
@@ -280,7 +189,6 @@ textarea.ng-invalid.ng-touched {
         justify-content: center;
         font-size: 30px;
         margin-top: 8px;
-        /* background-color: greenyellow; */
         height: auto;
         width: auto;
     }
@@ -291,8 +199,6 @@ textarea.ng-invalid.ng-touched {
         grid-column-gap: 25px;
         width: 550px;
         height: auto;
-        /* background-color: rgb(228, 62, 62); */
-        /* margin: auto; */
     }
 
     input {
@@ -304,6 +210,7 @@ textarea.ng-invalid.ng-touched {
         padding-left: 15px;
         margin: 13px 14px;
         align-items: center;
+        background-color: white;
     }
 
     #textarea {
@@ -316,17 +223,17 @@ textarea.ng-invalid.ng-touched {
         resize: vertical;
         height: auto;
         width: 519px;
+        background-color: white;
     }
 
     .p-button-lg {
         width: 160px;
         height: 60px;
         font-size: 100px;
-        border-radius: 30px;
+        border-radius: 10px;
         border: none;
         font-size: 20px;
-        background-color: rgb(42, 39, 39);
-        box-shadow: 0 0 10px 0 #373838 inset, 0 0 20px 2px #535555;
+        background-color: #1a91f0;
     }
 
     .btn_container {
@@ -336,56 +243,13 @@ textarea.ng-invalid.ng-touched {
         margin: auto;
         margin-top: 10px;
         width: 550px;
-        /* background-color: aqua; */
     }
-
-    .tag {
-        display: flex;
-        flex-wrap: wrap;
-        width: 550px;
-        margin: auto;
-
-    }
-
-    .addbtn {
-        margin: 25px 0px;
-        position: relative;
-        left: -17px;
-        top: -12px;
-        height: 41px;
-        width: 84px;
-        outline: none;
-        border: none;
-        cursor: pointer;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-        background-color: rgb(90, 88, 88);
-        color: black;
-    }
-
-    .addbtn[disabled] {
-        margin: 25px 0px;
-        position: relative;
-        left: -21px;
-        top: -12px;
-        height: 40px;
-        width: 84px;
-        outline: none;
-        border: none;
-        cursor: pointer;
-        border-top-right-radius: 15px;
-        border-bottom-right-radius: 15px;
-        background-color: rgb(90, 88, 88);
-        color: rgb(32, 29, 29);
-    }
-
 }
 
 
 @media screen and (min-width:400px) and (max-width:550px) {
 
     .contaier {
-        /* background-color: pink; */
         display: flex;
         align-items: center;
         width: auto;
@@ -399,7 +263,6 @@ textarea.ng-invalid.ng-touched {
         justify-content: center;
         font-size: 35px;
         margin-top: 8px;
-        /* background-color: greenyellow; */
         height: auto;
         width: auto;
     }
@@ -409,8 +272,6 @@ textarea.ng-invalid.ng-touched {
         flex-wrap: wrap;
         width: 412px;
         height: auto;
-        /* background-color: rgb(228, 62, 62); */
-        /* margin: auto; */
     }
 
     input {
@@ -422,6 +283,7 @@ textarea.ng-invalid.ng-touched {
         padding-left: 15px;
         margin: 13px 26px;
         align-items: center;
+        background-color: white;
     }
 
     #textarea {
@@ -434,17 +296,17 @@ textarea.ng-invalid.ng-touched {
         resize: vertical;
         height: auto;
         width: 360px;
+        background-color: white;
     }
 
     .p-button-lg {
         width: 160px;
         height: 60px;
         font-size: 100px;
-        border-radius: 30px;
+        border-radius: 10px;
         border: none;
         font-size: 20px;
-        background-color: rgb(42, 39, 39);
-        box-shadow: 0 0 10px 0 #373838 inset, 0 0 20px 2px #535555;
+        background-color: #1a91f0;
     }
 
     .btn_container {
@@ -454,43 +316,6 @@ textarea.ng-invalid.ng-touched {
         margin: auto;
         width: auto;
         margin-top: 10px;
-        /* background-color: aqua; */
-    }
-
-    .tag {
-        display: flex;
-        flex-wrap: wrap;
-        width: 412px;
-        margin: auto;
-
-    }
-
-    .addbtn {
-        position: relative;
-        left: 25px;
-        top: -12px;
-        height: 40px;
-        width: 358px;
-        outline: none;
-        border: none;
-        cursor: pointer;
-        border-radius: 15px;
-        background-color: rgb(90, 88, 88);
-        color: black;
-    }
-
-    .addbtn[disabled] {
-        position: relative;
-        left: 25px;
-        top: -12px;
-        height: 40px;
-        width: 358px;
-        outline: none;
-        border: none;
-        cursor: pointer;
-        border-radius: 15px;
-        background-color: rgb(90, 88, 88);
-        color: rgb(32, 29, 29);
     }
 
 }
@@ -498,7 +323,6 @@ textarea.ng-invalid.ng-touched {
 @media screen and (min-width:350px) and (max-width:400px) {
 
     .contaier {
-        /* background-color: pink; */
         display: flex;
         align-items: center;
         width: auto;
@@ -512,7 +336,6 @@ textarea.ng-invalid.ng-touched {
         justify-content: center;
         font-size: 27px;
         margin-top: 5px;
-        /* background-color: greenyellow; */
         height: auto;
         width: auto;
     }
@@ -522,7 +345,6 @@ textarea.ng-invalid.ng-touched {
         flex-wrap: wrap;
         width: 365px;
         height: auto;
-        /* background-color: rgb(228, 62, 62); */
         margin: auto;
     }
 
@@ -535,6 +357,7 @@ textarea.ng-invalid.ng-touched {
         padding-left: 15px;
         margin: 13px 23px;
         align-items: center;
+        background-color: white;
     }
 
     #textarea {
@@ -547,18 +370,18 @@ textarea.ng-invalid.ng-touched {
         resize: vertical;
         height: auto;
         width: 302px;
+        background-color: white;
     }
 
     .p-button-lg {
         width: 130px;
         height: 45px;
         font-size: 100px;
-        border-radius: 30px;
+        border-radius: 10px;
         border: none;
         font-size: 20px;
         margin-bottom: 10px;
-        background-color: rgb(42, 39, 39);
-        box-shadow: 0 0 10px 0 #373838 inset, 0 0 20px 2px #535555;
+        background-color: #1a91f0;
     }
 
     .btn_container {
@@ -568,51 +391,14 @@ textarea.ng-invalid.ng-touched {
         margin: auto;
         margin-top: 10px;
         width: auto;
-        /* background-color: aqua; */
     }
 
-    .tag {
-        display: flex;
-        flex-wrap: wrap;
-        width: 350px;
-        margin: auto;
-
-    }
-
-    .addbtn {
-        position: relative;
-        left: 25px;
-        top: -12px;
-        height: 40px;
-        width: 302px;
-        outline: none;
-        border: none;
-        cursor: pointer;
-        border-radius: 15px;
-        background-color: rgb(90, 88, 88);
-        color: black;
-    }
-
-    .addbtn[disabled] {
-        position: relative;
-        left: 25px;
-        top: -12px;
-        height: 40px;
-        width: 302px;
-        outline: none;
-        border: none;
-        cursor: pointer;
-        border-radius: 15px;
-        background-color: rgb(90, 88, 88);
-        color: rgb(32, 29, 29);
-    }
 }
 
 
 @media screen and (min-width:280px) and (max-width:350px) {
 
     .contaier {
-        /* background-color: pink; */
         display: flex;
         align-items: center;
         width: auto;
@@ -626,7 +412,6 @@ textarea.ng-invalid.ng-touched {
         justify-content: center;
         font-size: 25px;
         margin-top: 5px;
-        /* background-color: greenyellow; */
         height: auto;
         width: auto;
     }
@@ -636,7 +421,6 @@ textarea.ng-invalid.ng-touched {
         flex-wrap: wrap;
         width: 292px;
         height: auto;
-        /* background-color: rgb(228, 62, 62); */
         margin: auto;
     }
 
@@ -649,6 +433,7 @@ textarea.ng-invalid.ng-touched {
         padding-left: 15px;
         margin: 13px 12px;
         align-items: center;
+        background-color: white;
     }
 
     #textarea {
@@ -661,18 +446,18 @@ textarea.ng-invalid.ng-touched {
         resize: vertical;
         height: auto;
         width: 269px;
+        background-color: white;
     }
 
     .p-button-lg {
         width: 130px;
         height: 45px;
         font-size: 100px;
-        border-radius: 30px;
+        border-radius: 10px;
         border: none;
         font-size: 20px;
         margin-bottom: 10px;
-        background-color: rgb(42, 39, 39);
-        box-shadow: 0 0 10px 0 #373838 inset, 0 0 20px 2px #535555;
+        background-color: #1a91f0;
     }
 
     .btn_container {
@@ -682,43 +467,6 @@ textarea.ng-invalid.ng-touched {
         margin: auto;
         margin-top: 10px;
         width: auto;
-        /* background-color: aqua; */
-    }
-
-    .tag {
-        display: flex;
-        flex-wrap: wrap;
-        width: auto;
-        margin: auto;
-
-    }
-
-    .addbtn {
-        position: relative;
-        left: 14px;
-        top: -12px;
-        height: 40px;
-        width: 259px;
-        outline: none;
-        border: none;
-        cursor: pointer;
-        border-radius: 15px;
-        background-color: rgb(90, 88, 88);
-        color: black;
-    }
-
-    .addbtn[disabled] {
-        position: relative;
-        left: 14px;
-        top: -12px;
-        height: 40px;
-        width: 259px;
-        outline: none;
-        border: none;
-        cursor: pointer;
-        border-radius: 15px;
-        background-color: rgb(90, 88, 88);
-        color: rgb(32, 29, 29);
     }
 }
 
@@ -726,7 +474,6 @@ textarea.ng-invalid.ng-touched {
 @media screen and (max-width:280px) {
 
     .contaier {
-        /* background-color: pink; */
         display: flex;
         align-items: center;
         width: auto;
@@ -740,7 +487,6 @@ textarea.ng-invalid.ng-touched {
         justify-content: center;
         font-size: 20px;
         margin-top: 4px;
-        /* background-color: greenyellow; */
         height: auto;
         width: auto;
     }
@@ -750,7 +496,6 @@ textarea.ng-invalid.ng-touched {
         flex-wrap: wrap;
         width: auto;
         height: auto;
-        /* background-color: rgb(228, 62, 62); */
         margin: auto;
     }
 
@@ -763,6 +508,7 @@ textarea.ng-invalid.ng-touched {
         padding-left: 15px;
         margin: 8px 20px;
         align-items: center;
+        background-color: white;
     }
 
     #textarea {
@@ -775,18 +521,18 @@ textarea.ng-invalid.ng-touched {
         resize: vertical;
         height: auto;
         width: 240px;
+        background-color: white;
     }
 
     .p-button-lg {
         width: 130px;
         height: 45px;
         font-size: 100px;
-        border-radius: 30px;
+        border-radius: 10px;
         border: none;
         font-size: 20px;
         margin-bottom: 10px;
-        background-color: rgb(42, 39, 39);
-        box-shadow: 0 0 10px 0 #373838 inset, 0 0 20px 2px #535555;
+        background-color: #1a91f0;
     }
 
     .btn_container {
@@ -796,42 +542,6 @@ textarea.ng-invalid.ng-touched {
         margin: auto;
         margin-top: 10px;
         width: auto;
-        /* background-color: aqua; */
     }
 
-    .tag {
-        display: flex;
-        flex-wrap: wrap;
-        width: auto;
-        margin: auto;
-
-    }
-
-    .addbtn {
-        position: relative;
-        left: 22px;
-        top: -12px;
-        height: 40px;
-        width: 234px;
-        outline: none;
-        border: none;
-        cursor: pointer;
-        border-radius: 15px;
-        background-color: rgb(90, 88, 88);
-        color: black;
-    }
-
-    .addbtn[disabled] {
-        position: relative;
-        left: 22px;
-        top: -12px;
-        height: 40px;
-        width: 234px;
-        outline: none;
-        border: none;
-        cursor: pointer;
-        border-radius: 15px;
-        background-color: rgb(90, 88, 88);
-        color: rgb(32, 29, 29);
-    }
 }

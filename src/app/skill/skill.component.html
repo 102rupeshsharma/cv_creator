@@ -1,0 +1,33 @@
+<app-navbar></app-navbar>
+<div>
+    <div class="heading">
+        Skills
+    </div>
+
+    <div class="contaier">
+
+        <form [formGroup]="signupForm" (ngSubmit)="storeData(signupForm)">
+            <div class="sub_container">
+
+                <div class="skills">
+                    <input type="text" id="addSkill" formControlName="skills" class="p-inputtext-lg" #skillinput
+                        placeholder="Skills" name="skill" [(ngModel)]="skillValue" (input)="onSkillValueChange()" />
+                    <small *ngIf="signupForm.get('skills')?.invalid && signupForm.get('skills')?.touched">*Add atleast
+                        one
+                        skill</small>
+                </div>
+                <div class="btn">
+                    <div>
+                        <button [disabled]="skillinput.value.length < 2" type="button" class="addbtn"
+                            (click)="addSkill(skillinput)">Add</button>
+                    </div>
+                </div>
+                
+            </div>
+            <app-tags class="tag" [skills]="formdataservice.skills"> </app-tags>
+            <div class="btn_container">
+                <button type="button" [routerLink]="['/projects']" pButton label="Back" class="p-button-lg"></button>
+                <button type="submit" [disabled]="signupForm.invalid" pButton label="Next" class="p-button-lg"></button>
+            </div>
+        </form>
+    </div>

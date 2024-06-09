@@ -10,8 +10,6 @@ import { Router } from '@angular/router';
 })
 export class SingupComponent {
 
-  isCaptchaResolved = false;
-  captchaResponse: string | null = null;
 
   username: string = '';
   email: string = '';
@@ -20,18 +18,13 @@ export class SingupComponent {
 
   constructor(private dataService: DataService, private router: Router) { }
 
-  onCaptchaResolved(captchaResponse: string | null): void {
-    this.isCaptchaResolved = true;
-    this.captchaResponse = captchaResponse;
-    console.log('Captcha resolved with response:', captchaResponse);
-  }
 
   checkFormValidity() {
     return this.username && this.email && this.password && this.confirmPassword && (this.password === this.confirmPassword);
   }
 
   onSignUp():void {
-    if (this.checkFormValidity() && this.isCaptchaResolved) {
+   
       const newUser = {
         username: this.username,
         email: this.email,
@@ -40,10 +33,6 @@ export class SingupComponent {
       this.dataService.addUser(newUser);
       alert('Registeration Successfull');
       this.router.navigate(['/home'])
-
-    } else {
-      alert('Registeration Failed.')
-    }
   }
 }
 
